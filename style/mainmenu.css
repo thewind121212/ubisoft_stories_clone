@@ -1,0 +1,563 @@
+.overlay__main .mainmenu__container {
+  width: 87.5vw;
+  margin: 0 auto;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top {
+  display: flex;
+  justify-content: end;
+  margin: 6.52vh 0;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list {
+  width: 25vw;
+  display: flex;
+  align-items: flex-end;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist .top__menulist__item {
+  margin-bottom: 0.1875em;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist .top__menulist__item .top__menulist__item__link {
+  color: #383838;
+  list-style: none;
+  font-size: 3.4375em;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: "CompactaBT";
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist .top__menulist__item .top__menulist__item__link--on {
+  color: #f11d6b;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image {
+  width: 62.5vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox {
+  position: relative;
+  overflow: hidden;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400%;
+  transition: all 0.4s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--text {
+  left: 10px;
+  bottom: 10px;
+  color: white;
+  position: absolute;
+  font-size: 1.5em;
+  font-family: "CompactaBT";
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--timeread {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  padding-top: 0.3125em;
+  text-align: center;
+  right: -4rem;
+  transition: 0.4s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--timeread .time__duration {
+  color: #57ffab;
+  font-size: 2.8125em;
+  line-height: 1.125em;
+  font-family: "CompactaBT";
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--timeread .time__unit {
+  color: white;
+  font-size: 0.5625em;
+  margin-top: -0.625em;
+  text-transform: uppercase;
+  font-family: "ubisoft-bold";
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+  transition: all ease-out 0.3s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link:hover .top__imagebox__inner--background {
+  background-color: #f11d6b;
+  transform: scale(1.06);
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link:hover .top__imagebox__inner--text {
+  opacity: 1 !important;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link:hover .top__imagebox__inner--timeread {
+  right: 0;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--1 {
+  height: 25vw;
+  width: 24.375vw;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--2 {
+  height: 25vw;
+  width: 18.125vw;
+  background-color: red;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--3 {
+  height: 12.1875vw;
+  width: 18.125vw;
+  background-color: red;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--4 {
+  height: 12.1875vw;
+  width: 18.125vw;
+  background-color: red;
+}
+.overlay__main .mainmenu__container__bottom {
+  color: ivory !important;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.4vw;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__first {
+  width: 25vw;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__first .first--list {
+  color: #fff;
+  list-style-type: none;
+  font-family: "ubisoft-bold";
+  text-transform: uppercase;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__first .first--list:hover {
+  cursor: pointer;
+  color: #57ffab;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 43.75vw;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__second .second--list {
+  list-style-type: none;
+  cursor: pointer;
+  font-family: "ubisoft-bold";
+  width: 18.75vw;
+  text-transform: uppercase;
+  color: #555;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__second .second--list:hover {
+  color: white;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third {
+  width: 18.75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--head {
+  font-family: "ubisoft-bold";
+  font-size: 0.9375em;
+  margin-bottom: 0.9375em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container {
+  overflow: hidden;
+  width: 3.125vw;
+  height: 3.125vw;
+  border: 2px solid #fff;
+  margin-left: -2px;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container .wrap__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container .wrap__container .share__upper {
+  width: 100%;
+  padding: 30%;
+  height: 100%;
+  display: flex;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container .wrap__container .share__below {
+  margin-top: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 30%;
+  background-color: white;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container:hover .wrap__container {
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 999px) {
+  .overlay__main .overlay__main {
+    font-size: 16px !important;
+  }
+  .overlay__main .mainmenu__container__top--image {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .overlay__main .mainmenu__container__bottom {
+    display: block !important;
+  }
+  .overlay__main .mainmenu__bottom__first {
+    width: 100vw !important;
+    font-size: 14px !important;
+  }
+  .overlay__main .mainmenu__bottom__second {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .overlay__main .mainmenu__bottom__third {
+    margin-top: 15px !important;
+    width: 87.5vw !important;
+    font-size: 11px !important;
+  }
+  .overlay__main .mainmenu__bottom__third .share__container {
+    width: 41px !important;
+    height: 41px !important;
+  }
+}
+@media only screen and (min-width: 1131px) {
+  .overlay__main .top__menulist__item__link {
+    font-size: 4.4375em !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .overlay__main .top__menulist__item__link {
+    font-size: 5.4375em !important;
+  }
+}
+
+.main__container .contentblock2 {
+  width: 100%;
+  height: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.main__container .contentblock2::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.main__container .contentblock2 .contentblock2__inner {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap {
+  position: absolute;
+  box-sizing: unset !important;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__1, .main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__2, .main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 20px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__1--background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__1--background .background--inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Assets/image/main-menu-8.jpg");
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__2--background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__2--background .background--inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Assets/image/main-menu-6.jpg");
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__3--background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__3--background .background--inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Assets/image/main-menu-10.jpg");
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .background--border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__timeread {
+  width: 5.125em;
+  height: 5.125em;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  right: 0px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__timeread .timeread__duration {
+  font-size: 3em;
+  width: 80%;
+  height: 100%;
+  font-family: "CompactaBT";
+  color: #57ffab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__timeread .timeread__unit {
+  width: 20%;
+  height: 100%;
+  color: white;
+  font-family: "ubisoft-bold";
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: translateX(-10px);
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__text {
+  width: 100%;
+  margin-top: 10px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__text .block2__text--head {
+  text-transform: uppercase;
+  color: #821ae8;
+  font-family: "ubisoft-bold";
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__text .block2__text--sub {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "CompactaBT";
+  background-image: linear-gradient(to right, #000 50%, #f11d6b 50%, #f11d6b);
+  cursor: pointer;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s ease-out;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock .twoblock--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-family: "ubisoft-bold";
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock .twoblock--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  border: 1px solid black;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock .twoblock--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer--text {
+  color: black;
+  font-family: "ubisoft";
+  font-size: 0.75rem;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock .twoblock--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubisoft-bold";
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock .twoblock--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock .twoblock--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+.main__container .contentblock2--hover:hover .background--inner {
+  transform: scale(1.1);
+}
+.main__container .contentblock2--hover:hover .block2__text--sub {
+  background-position: -100%;
+}
+.main__container .contentblock2--hover:hover .background--border {
+  border: 6px solid #57ffab;
+  opacity: 1 !important;
+}
+@media only screen and (max-width: 675px) {
+  .main__container .block2__text--sub {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main__container .contentblock2 {
+    height: 115vw;
+  }
+  .main__container .contentblock2__footer {
+    margin-top: 5px !important;
+  }
+  .main__container .block2__text--sub {
+    font-size: 1.2rem !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main__container .contentblock2 {
+    height: 140vw;
+  }
+  .main__container .contentblock2__footer {
+    margin-top: 5px !important;
+  }
+  .main__container .block2__text--sub {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (min-width: 999px) {
+  .main__container .contentblock2 {
+    padding: 5%;
+    height: 45vw !important;
+    overflow: hidden !important;
+  }
+  .main__container .block2__text--sub {
+    font-size: unset !important;
+    display: block;
+    word-wrap: break-word !important;
+  }
+  .main__container .contentblock2__wrap {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .main__container .contentblock2 {
+    padding: 5%;
+    height: 45vw !important;
+    overflow: hidden !important;
+  }
+  .main__container .block2__text--sub {
+    display: block;
+    word-wrap: break-word !important;
+    font-size: 2rem !important;
+  }
+  .main__container .contentblock2__wrap {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=mainmenu.css.map */

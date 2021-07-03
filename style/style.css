@@ -1,0 +1,1713 @@
+@font-face {
+  font-family: "CompactaBT";
+  src: url("../Assets/Font/CompactaBT-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Assets/Font/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ubisoft";
+  src: url("../Assets/Font/ubisoftsans-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ubisoft-bold";
+  src: url("../Assets/Font/ubisoftsans-bold.woff") format("woff");
+}
+.overlay__main .mainmenu__container {
+  width: 87.5vw;
+  margin: 0 auto;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top {
+  display: flex;
+  justify-content: end;
+  margin: 6.52vh 0;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list {
+  width: 25vw;
+  display: flex;
+  align-items: flex-end;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist .top__menulist__item {
+  margin-bottom: 0.1875em;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist .top__menulist__item .top__menulist__item__link {
+  color: #383838;
+  list-style: none;
+  font-size: 3.4375em;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: "CompactaBT";
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--list .top__menulist .top__menulist__item .top__menulist__item__link--on {
+  color: #f11d6b;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image {
+  width: 62.5vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox {
+  position: relative;
+  overflow: hidden;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400%;
+  transition: all 0.4s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--text {
+  left: 10px;
+  bottom: 10px;
+  color: white;
+  position: absolute;
+  font-size: 1.5em;
+  font-family: "CompactaBT";
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.4s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--timeread {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  padding-top: 0.3125em;
+  text-align: center;
+  right: -4rem;
+  transition: 0.4s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--timeread .time__duration {
+  color: #57ffab;
+  font-size: 2.8125em;
+  line-height: 1.125em;
+  font-family: "CompactaBT";
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--timeread .time__unit {
+  color: white;
+  font-size: 0.5625em;
+  margin-top: -0.625em;
+  text-transform: uppercase;
+  font-family: "ubisoft-bold";
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link .top__imagebox__inner--background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: multiply;
+  transition: all ease-out 0.3s;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link:hover .top__imagebox__inner--background {
+  background-color: #f11d6b;
+  transform: scale(1.06);
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link:hover .top__imagebox__inner--text {
+  opacity: 1 !important;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__imagebox .top__imagebox__inner .top__imagebox__inner--link:hover .top__imagebox__inner--timeread {
+  right: 0;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--1 {
+  height: 25vw;
+  width: 24.375vw;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--2 {
+  height: 25vw;
+  width: 18.125vw;
+  background-color: red;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--3 {
+  height: 12.1875vw;
+  width: 18.125vw;
+  background-color: red;
+}
+.overlay__main .mainmenu__container .mainmenu__container__top .mainmenu__container__top--image .top__image--4 {
+  height: 12.1875vw;
+  width: 18.125vw;
+  background-color: red;
+}
+.overlay__main .mainmenu__container__bottom {
+  color: ivory !important;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.4vw;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__first {
+  width: 25vw;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__first .first--list {
+  color: #fff;
+  list-style-type: none;
+  font-family: "ubisoft-bold";
+  text-transform: uppercase;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__first .first--list:hover {
+  cursor: pointer;
+  color: #57ffab;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 43.75vw;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__second .second--list {
+  list-style-type: none;
+  cursor: pointer;
+  font-family: "ubisoft-bold";
+  width: 18.75vw;
+  text-transform: uppercase;
+  color: #555;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__second .second--list:hover {
+  color: white;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third {
+  width: 18.75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--head {
+  font-family: "ubisoft-bold";
+  font-size: 0.9375em;
+  margin-bottom: 0.9375em;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container {
+  overflow: hidden;
+  width: 3.125vw;
+  height: 3.125vw;
+  border: 2px solid #fff;
+  margin-left: -2px;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container .wrap__container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container .wrap__container .share__upper {
+  width: 100%;
+  padding: 30%;
+  height: 100%;
+  display: flex;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container .wrap__container .share__below {
+  margin-top: 2px;
+  width: 100%;
+  height: 100%;
+  padding: 30%;
+  background-color: white;
+}
+.overlay__main .mainmenu__container__bottom .mainmenu__bottom__third .mainmenu__bottom--share .share__container:hover .wrap__container {
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 999px) {
+  .overlay__main .overlay__main {
+    font-size: 16px !important;
+  }
+  .overlay__main .mainmenu__container__top--image {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .overlay__main .mainmenu__container__bottom {
+    display: block !important;
+  }
+  .overlay__main .mainmenu__bottom__first {
+    width: 100vw !important;
+    font-size: 14px !important;
+  }
+  .overlay__main .mainmenu__bottom__second {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .overlay__main .mainmenu__bottom__third {
+    margin-top: 15px !important;
+    width: 87.5vw !important;
+    font-size: 11px !important;
+  }
+  .overlay__main .mainmenu__bottom__third .share__container {
+    width: 41px !important;
+    height: 41px !important;
+  }
+}
+@media only screen and (min-width: 1131px) {
+  .overlay__main .top__menulist__item__link {
+    font-size: 4.4375em !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .overlay__main .top__menulist__item__link {
+    font-size: 5.4375em !important;
+  }
+}
+
+.main__container .contentblock2 {
+  width: 100%;
+  height: 100vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.main__container .contentblock2::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.main__container .contentblock2 .contentblock2__inner {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap {
+  position: absolute;
+  box-sizing: unset !important;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__1, .main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__2, .main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 20px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__1--background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__1--background .background--inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Assets/image/main-menu-8.jpg");
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__2--background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__2--background .background--inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Assets/image/main-menu-6.jpg");
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__3--background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .block2__3--background .background--inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Assets/image/main-menu-10.jpg");
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .background--border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__timeread {
+  width: 5.125em;
+  height: 5.125em;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  right: 0px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__timeread .timeread__duration {
+  font-size: 3em;
+  width: 80%;
+  height: 100%;
+  font-family: "CompactaBT";
+  color: #57ffab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__timeread .timeread__unit {
+  width: 20%;
+  height: 100%;
+  color: white;
+  font-family: "ubisoft-bold";
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  text-align: center;
+  writing-mode: vertical-rl;
+  transform: translateX(-10px);
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__text {
+  width: 100%;
+  margin-top: 10px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__text .block2__text--head {
+  text-transform: uppercase;
+  color: #821ae8;
+  font-family: "ubisoft-bold";
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .contentblock2__text .block2__text--sub {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "CompactaBT";
+  background-image: linear-gradient(to right, #000 50%, #f11d6b 50%, #f11d6b);
+  cursor: pointer;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.2s ease-out;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock .twoblock--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-family: "ubisoft-bold";
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock .twoblock--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  border: 1px solid black;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__wrap .footer__twoblock .twoblock--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer--text {
+  color: black;
+  font-family: "ubisoft";
+  font-size: 0.75rem;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock .twoblock--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubisoft-bold";
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock .twoblock--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.main__container .contentblock2 .contentblock2__inner .contentblock2__footer .footer__twoblock .twoblock--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+.main__container .contentblock2--hover:hover .background--inner {
+  transform: scale(1.1);
+}
+.main__container .contentblock2--hover:hover .block2__text--sub {
+  background-position: -100%;
+}
+.main__container .contentblock2--hover:hover .background--border {
+  border: 6px solid #57ffab;
+  opacity: 1 !important;
+}
+@media only screen and (max-width: 675px) {
+  .main__container .block2__text--sub {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main__container .contentblock2 {
+    height: 115vw;
+  }
+  .main__container .contentblock2__footer {
+    margin-top: 5px !important;
+  }
+  .main__container .block2__text--sub {
+    font-size: 1.2rem !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .main__container .contentblock2 {
+    height: 140vw;
+  }
+  .main__container .contentblock2__footer {
+    margin-top: 5px !important;
+  }
+  .main__container .block2__text--sub {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (min-width: 999px) {
+  .main__container .contentblock2 {
+    padding: 5%;
+    height: 45vw !important;
+    overflow: hidden !important;
+  }
+  .main__container .block2__text--sub {
+    font-size: unset !important;
+    display: block;
+    word-wrap: break-word !important;
+  }
+  .main__container .contentblock2__wrap {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .main__container .contentblock2 {
+    padding: 5%;
+    height: 45vw !important;
+    overflow: hidden !important;
+  }
+  .main__container .block2__text--sub {
+    display: block;
+    word-wrap: break-word !important;
+    font-size: 2rem !important;
+  }
+  .main__container .contentblock2__wrap {
+    width: 100% !important;
+  }
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  visibility: hidden;
+}
+
+.overlay__main {
+  position: absolute;
+  z-index: 20;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition-delay: 500ms;
+}
+
+.hide__mainoverlay {
+  opacity: 1;
+}
+
+.overlay__twoWall {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay__wall1 {
+  z-index: 100;
+  position: absolute;
+  background-color: #57ffab;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left center 0px;
+}
+
+.overlay__wall2 {
+  z-index: 101;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left center 0px;
+}
+
+@keyframes linh3 {
+  0% {
+    transform: scale(0, 1);
+  }
+  70% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.show3 {
+  transform-origin: left center 0px;
+  animation: linh3 0.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.23, 0.66, 0.4);
+}
+
+@keyframes linh {
+  0% {
+    transform: scale(0, 1);
+  }
+  70% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.show {
+  transform-origin: left center 0px;
+  animation: linh 0.5s;
+}
+
+.show1 {
+  transform-origin: right center 0px;
+  animation: linh2 0.7s;
+}
+
+@keyframes linh2 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+  }
+}
+.show4 {
+  transform-origin: right center 0px;
+  animation: linh2 0.4s;
+}
+
+@keyframes linh4 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.nav {
+  display: flex;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+.nav .nav__menulist,
+.nav .nav__search,
+.nav .nav__logo {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__menulist {
+  background-color: #57ffab;
+  transition: 0.5s ease-out;
+  outline: none;
+  box-shadow: inset 0 0 0 0.01 black;
+}
+.nav .nav__menulist:hover {
+  cursor: pointer;
+  color: #58ffab;
+  box-shadow: inset 50px 0 0 0.01px black;
+}
+.nav .nav__menulist:hover .menubar_icon {
+  width: 100%;
+  fill: #57ffab;
+}
+.nav .nav__menulist .nav__menulist--Head {
+  display: none;
+  visibility: hidden;
+}
+.nav .nav__menulist_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+.nav .nav__menulist_icon .menubar_icon {
+  fill: black;
+  width: 100%;
+}
+.nav .nav__story {
+  width: calc(100% - 150px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__story .nav__story_icon {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url(https://storiesubisoft.herokuapp.com/assets/image/sample-background.png);
+  width: 72px;
+  height: 32px;
+  background-position: -585px -503.5px;
+  background-size: 842px 700px;
+  transition: transform 0.4s ease-out;
+  transform: translateY(50px);
+}
+.nav .nav__search {
+  background-color: #888;
+}
+.nav .nav__search .nav__search_icon {
+  font-size: 12px;
+  color: white;
+  transition: all 0.2s;
+}
+.nav .nav__search:hover .nav__search_icon {
+  font-size: 14px;
+}
+.nav .nav__search:hover {
+  background-color: #aaa;
+}
+.nav .nav__logo {
+  position: relative;
+  transition: 0.4s;
+}
+.nav .nav__logo:after {
+  content: "";
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: #58ffab;
+  position: absolute;
+  transition: 0.5s;
+}
+.nav .nav__logo:hover:after {
+  right: 0px;
+}
+.nav .nav__logo:hover .nav__logo--icon {
+  color: black;
+}
+.nav .nav__logo:hover .nav__logo--text {
+  color: black;
+}
+.nav .nav__logo .nav__logo--inner {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__logo .nav__logo--inner .nav__logo_image {
+  width: 30px;
+  height: 30px;
+}
+.nav .nav__logo .nav__logo--inner .nav__logo--icon {
+  display: none !important;
+  color: #888888;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.nav .nav__logo .nav__logo--inner .nav__logo--text {
+  display: none !important;
+  margin: 0 8px;
+  color: #888888;
+  font-family: "Ubisoft";
+  font-size: 18px;
+  font-weight: 100;
+}
+.nav .nav__logo:before {
+  position: absolute;
+  content: "";
+  border-left: 1px solid #888;
+  height: 100%;
+  left: 0;
+}
+.nav .logo__menu {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  transform: translate(0, -300px);
+  top: 50px;
+  background-color: black;
+  transition: 0.2s;
+}
+.nav .logo__menu ul.logo__menulist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav .logo__menu ul.logo__menulist li.logo__menulist--item {
+  width: 100%;
+  cursor: pointer;
+  padding-left: 20px;
+  font-family: "ubisoft";
+  color: #b5b5b5;
+  border-top: 1px solid #3e3e3e;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  height: 50px;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu {
+  width: 100%;
+  cursor: pointer;
+  font-family: "ubisoft";
+  padding-left: 20px;
+  color: #b5b5b5;
+  border-top: 1px solid #3e3e3e;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: auto;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--head .logo__menulist__submenu--text {
+  position: absolute;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--head .logo__menulist__submenu--icon {
+  transition: 0.4s;
+  position: absolute;
+  right: 20px;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--list {
+  display: none;
+  padding-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--list .submenu__item {
+  margin: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+  list-style-type: none;
+  width: 100%;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--listshow {
+  display: flex;
+}
+.nav .logo__menu--show {
+  transform: translate(0);
+  opacity: 1 !important;
+}
+
+@media only screen and (min-width: 999px) {
+  .nav .nav__menulist {
+    width: 130px;
+  }
+  .nav .nav__menulist:hover {
+    cursor: pointer;
+    color: #58ffab;
+    box-shadow: inset 130px 0 0 0.01px black;
+  }
+  .nav .nav__menulist:hover .menubar_icon {
+    width: 100%;
+    fill: #57ffab;
+  }
+  .nav .nav__menulist .nav__menulist--Head {
+    display: block;
+    visibility: visible !important;
+    font-weight: bold;
+    margin-left: 11px;
+    font-size: 18px;
+    font-family: "CompactaBT";
+  }
+  .nav .nav__logo {
+    width: 192px;
+  }
+  .nav .nav__logo:after {
+    content: "";
+    right: -192px;
+    width: 192px;
+    height: 50px;
+    background-color: #58ffab;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .nav .nav__logo .nav__logo--inner .nav__logo--icon {
+    display: block !important;
+  }
+  .nav .nav__logo .nav__logo--inner .nav__logo--text {
+    display: block !important;
+  }
+  .nav .nav__logo:hover:after {
+    right: 0px;
+  }
+  .nav .nav__logo:hover .nav__logo--icon {
+    color: black;
+  }
+  .nav .nav__logo:hover .nav__logo--text {
+    color: black;
+  }
+  .nav .nav__story {
+    width: calc(100% - 370px);
+  }
+  .nav .logo__menu {
+    width: 192px;
+    right: 0px;
+  }
+}
+.contentblock3 {
+  width: 100%;
+  height: 56.25vw;
+  overflow: hidden;
+}
+.contentblock3 .contentblock3__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contentblock3 .contentblock3__inner .block3--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Assets/image/FolderPreviewBlock.jpg");
+  background-size: cover;
+  transition: 0.2s ease;
+}
+.contentblock3 .contentblock3__inner .block3__content {
+  position: absolute;
+  width: 51%;
+  height: 48%;
+  left: 7%;
+  bottom: 0;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--background {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  padding: 6.25vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--head {
+  color: #57ffab;
+  font-family: "ubisoft-bold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--sub {
+  color: white;
+  font-family: "CompactaBT";
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 30px 0;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--content {
+  font-family: "ubisoft";
+  margin-bottom: 30px;
+  color: white;
+  font-size: 17px;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--text {
+  color: white;
+  font-family: "ubisoft";
+  font-size: 0.75rem;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock .interact--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubisoft-bold";
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock .interact--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock .interact--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+.contentblock3 .contentblock3__inner .block3__content:hover .inner--background {
+  transform: scale(1.05);
+}
+.contentblock3 .contentblock3__inner .block3__content:hover .block3--background {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 660px) {
+  .block3__content--head {
+    font-size: 12px !important;
+  }
+
+  .block3__content--sub {
+    font-size: 32px !important;
+  }
+
+  .block3__content--content {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .contentblock3 {
+    height: 147.25vw !important;
+  }
+
+  .block3--background {
+    width: 100% !important;
+    height: 50% !important;
+  }
+
+  .block3__content {
+    width: 100% !important;
+    left: 0 !important;
+  }
+}
+.contentblock4 {
+  width: 100%;
+  height: 816.32px;
+  background-color: #EEEEEE;
+  padding: 6.25vw 0;
+}
+.contentblock4 .contentblock4__left {
+  width: 100%;
+  padding-top: 6.25vw;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner .conetentblock4__circle--wrap {
+  width: 43.75vw;
+  height: 43.75vw;
+  background-color: #57ffab;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner .conetentblock4__circle--wrap .hom--thu {
+  position: absolute;
+  width: 29.166625vw;
+  height: 31.95796216vw;
+  background-size: 95.93085254vw 79.75249023vw;
+  background-position: -66.65029541vw -0.11393213vw;
+  background-image: url("../Assets/image/sample-background.png");
+  left: 12%;
+  bottom: 0;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner .conetentblock4__circle--wrap .gac--thu {
+  position: absolute;
+  width: 3.64582813vw;
+  height: 16.63409082vw;
+  background-size: 95.93085254vw 79.75249023vw;
+  background-position: -0.11393213vw -63.00446729vw;
+  background-image: url("../Assets/image/sample-background.png");
+  left: 41%;
+  top: 21%;
+}
+.contentblock4 .contentblock4__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 6.25vw;
+}
+.contentblock4 .contentblock4__right .right--head {
+  font-size: 25px;
+  font-family: "CompactaBT";
+  margin-bottom: 0.625em;
+}
+.contentblock4 .contentblock4__right .right--sub {
+  font-size: 16px;
+  font-family: "Roboto";
+  margin-bottom: 0.625em;
+  padding-right: 25vw;
+  line-height: 1.6875em;
+}
+.contentblock4 .contentblock4__right .contentblock4__inner {
+  justify-content: flex-end !important;
+}
+.contentblock4 .contentblock4__right .right--emailsend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contentblock4 .contentblock4__right .right--emailsend .emailsend--input {
+  width: 197px;
+  height: 50px;
+  border: 1px solid black;
+  padding-left: 5px;
+}
+.contentblock4 .contentblock4__right .right--emailsend .emailsend--submit {
+  width: 106px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-family: "ubisoft-bold";
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.block5 {
+  width: 100%;
+  height: 130px;
+  background-color: #57ffab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "CompactaBT";
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 999px) {
+  .contentblock4 {
+    display: flex;
+    flex-direction: row;
+    height: unset !important;
+  }
+  .contentblock4 .contentblock4__inner {
+    justify-content: flex-end !important;
+  }
+
+  .conetentblock4__circle--wrap {
+    width: 18.75vw !important;
+    height: 18.75vw !important;
+  }
+
+  .hom--thu {
+    width: 12.5vw !important;
+    height: 13.69628906vw !important;
+    background-size: 41.11328125vw 34.1796875vw !important;
+    background-position: -28.56445313vw -0.04882812vw !important;
+  }
+
+  .gac--thu {
+    width: 1.5625vw !important;
+    height: 7.12890625vw !important;
+    background-size: 41.11328125vw 34.1796875vw !important;
+    background-position: -0.04882812vw -27.00195313vw !important;
+  }
+
+  .right--sub {
+    padding: 0 !important;
+  }
+
+  .block5 {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .contentblock4 .right--head {
+    font-size: 40px !important;
+  }
+  .contentblock4 .right--sub {
+    padding-right: 18vw !important;
+    font-size: 21px !important;
+  }
+  .contentblock4 .emailsend--input {
+    width: 250px !important;
+    height: 67px !important;
+  }
+  .contentblock4 .emailsend--submit {
+    width: 106px !important;
+    height: 67px !important;
+  }
+
+  .block5 {
+    font-size: 50px !important;
+  }
+}
+.inner--block5_1 {
+  background-image: url("../Assets/image/podcast1.jpg") !important;
+}
+
+.inner--block5_2 {
+  background-image: url("../Assets/image/podcast2.jpg") !important;
+}
+
+.inner--block5_3 {
+  background-image: url("../Assets/image/podcast3.jpg") !important;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.footer .footer__social .social--chiadoi {
+  width: 1px;
+  height: 36px;
+  background-color: white;
+}
+.footer .footer__social .social--ubisoftlogo {
+  margin-right: 20px;
+  width: 109.2px;
+  height: 36px;
+  background-position: -351px -264.9px;
+  background-size: 505.2px 420px;
+  background-image: url("../Assets/image/sample-background.png");
+}
+.footer .footer__social .social--network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__social .social--network .network {
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 24px;
+  margin-left: 28px;
+}
+.footer .footer__social .social--network .facebook {
+  background-position: -817px -393.5px;
+  background-size: 842px 700px;
+  background-image: url("../Assets/image/sample-background.png");
+}
+.footer .footer__social .social--network .twitter {
+  background-image: url("../Assets/image/sample-background.png");
+  width: 24px;
+  height: 20px;
+  background-position: -817px -305.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__social .social--network .ig {
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 20px;
+  height: 20px;
+  background-position: -817px -327.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__social .social--network .linkin {
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 20px;
+  height: 20px;
+  background-position: -817px -371.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__social .social--network .youtube {
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 28px;
+  height: 20px;
+  background-position: -715px -503.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__list {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer .footer__list .list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .footer__list .list .list-item {
+  margin: 5px 20px;
+  font-family: "ubisoft-bold";
+  color: #888888;
+}
+
+.footer__trademarks {
+  background-color: #212121;
+  font-family: "ubisoft";
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 11px;
+  color: #888;
+}
+
+.main__container {
+  margin-top: 50px;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.main__container .coverblock {
+  position: relative;
+  width: 100%;
+  background-image: url("../Assets/image/home.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container .coverblock .coverblock__inner {
+  padding: 6.25vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+}
+.main__container .coverblock .coverblock__inner .coverblock__header {
+  transform: translate3d(0px, -23.8197px, 0px);
+  padding: 12.5vw 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main__container .coverblock .coverblock__inner .coverblock__header .coverblock__header--logo {
+  height: 3vw;
+}
+.main__container .coverblock .coverblock__inner .coverblock__header .coverblock__header--stories {
+  background-image: url("https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 62.5vw;
+  height: 29.42439863vw;
+  background-size: 90.4209622vw 75.17182131vw;
+  background-position: -0.10738832vw -29.74656357vw;
+}
+.main__container .coverblock .coverblock__list {
+  width: 100%;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item {
+  margin-bottom: 3.4375em;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item .coverblock__list__item--head {
+  width: fit-content;
+  cursor: pointer;
+  color: #57ffab;
+  background-color: black;
+  font-family: "ubisoft-bold";
+  font-size: 0.875em;
+  text-transform: uppercase;
+  padding: 0.0625em 0.3125em;
+  margin-bottom: 10px;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item .coverblock__list__item--content {
+  font-size: 2.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "CompactaBT";
+  color: #fff;
+  transition: 0.5s;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item hr {
+  width: 0px;
+  height: 2px;
+  background-color: #57ffab;
+  transition: 0.3s ease;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item:hover hr {
+  width: 150px;
+}
+@media only screen and (min-width: 999px) {
+  .main__container .coverblock__header {
+    padding: 6.5vw !important;
+    padding-bottom: 0 !important;
+  }
+  .main__container .coverblock__header--logo {
+    height: 2.1vw !important;
+    transform: translateY(3.5rem);
+  }
+  .main__container .coverblock__header__stories--inner {
+    transform: scale(0.7);
+  }
+  .main__container .coverblock__list__item--head {
+    font-size: 1.5rem !important;
+  }
+  .main__container .coverblock__list__item--content {
+    font-size: 3.25em !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .main__container .coverblock__header {
+    padding: 0 !important;
+  }
+  .main__container .coverblock__list__item--content {
+    font-size: 4em !important;
+    width: 47.5vw !important;
+  }
+  .main__container .coverblock__list__item--head {
+    font-size: 2em !important;
+  }
+}
+
+.main__container .contentblock1 {
+  overflow: hidden;
+  width: 100%;
+  height: 430px;
+}
+.main__container .contentblock1 .contentblock1__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 {
+  width: 100%;
+  padding: 2.125vw 4.25vw 0.75vw 3.25vw;
+  height: 100%;
+  background-color: #821AE8;
+  overflow: hidden;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__watermark {
+  position: absolute;
+  font-size: 12.5em;
+  color: #000;
+  font-family: "CompactaBT";
+  text-transform: uppercase;
+  opacity: 0.2;
+  white-space: nowrap;
+  right: -64%;
+  top: 29%;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__timeread {
+  width: 5.125em;
+  height: 5.125em;
+  background-color: transparent;
+  position: absolute;
+  right: -36px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__timeread .timeread__duration {
+  font-size: 3em;
+  position: relative;
+  top: 0.0625em;
+  right: 0.3125em;
+  font-family: "CompactaBT";
+  color: #57ffab;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__timeread .timeread__unit {
+  color: white;
+  font-family: "ubisoft-bold";
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  transform: rotate(90deg) translateX(-13px);
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow {
+  position: relative;
+  top: 50px;
+  width: 20%;
+  height: 20px;
+  transition: 0.4s;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow .arrow__body {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow .arrow__upper {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  right: -2px;
+  top: -7px;
+  transform: rotate(45deg);
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow .arrow__below {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(-45deg);
+  right: -3px;
+  bottom: 12px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow:hover {
+  width: 60%;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__text {
+  width: 100%;
+  position: absolute;
+  bottom: 90px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__text .block1__text--head {
+  text-transform: uppercase;
+  color: #57ffab;
+  font-family: "ubisoft-bold";
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__text .block1__text--sub {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-family: "CompactaBT";
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer--text {
+  color: white;
+  font-family: "ubisoft";
+  font-size: 0.75rem;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock .twoblock--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubisoft-bold";
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock .twoblock--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock .twoblock--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+@media only screen and (min-width: 1079px) {
+  .main__container .contentblock1__1 {
+    width: 50% !important;
+    height: 100%;
+  }
+  .main__container .contentblock1 {
+    width: 100%;
+    height: 50vw !important;
+  }
+  .main__container .contentblock1__text .block1__text--sub {
+    font-size: 3.25em !important;
+  }
+  .main__container .contentblock1__0 {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+  }
+  .main__container .contentblock1__0 .contentblock1__0__inner {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/image/main-menu-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .main__container .contentblock1__text .block1__text--sub {
+    font-size: 5.25em !important;
+  }
+  .main__container .contentblock1__text .footer--text {
+    font-size: 1.75rem !important;
+  }
+  .main__container .contentblock1__text .timeread__duration {
+    font-size: 4rem !important;
+  }
+  .main__container .contentblock1__text .contentblock1__text {
+    bottom: 150px !important;
+  }
+  .main__container .contentblock1__text .block1__text--head {
+    font-size: 1.875rem !important;
+  }
+  .main__container .contentblock1__text .timeread__unit {
+    font-size: 16px !important;
+    transform: rotate(90deg) translate(-33px, -5px) !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

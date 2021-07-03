@@ -1,0 +1,113 @@
+.overlay {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  visibility: hidden;
+}
+
+.overlay__main {
+  position: absolute;
+  z-index: 20;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition-delay: 500ms;
+}
+
+.hide__mainoverlay {
+  opacity: 1;
+}
+
+.overlay__twoWall {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay__wall1 {
+  z-index: 100;
+  position: absolute;
+  background-color: #57ffab;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left center 0px;
+}
+
+.overlay__wall2 {
+  z-index: 101;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left center 0px;
+}
+
+@keyframes linh3 {
+  0% {
+    transform: scale(0, 1);
+  }
+  70% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.show3 {
+  transform-origin: left center 0px;
+  animation: linh3 0.5s;
+  animation-timing-function: cubic-bezier(0.77, 0.23, 0.66, 0.4);
+}
+
+@keyframes linh {
+  0% {
+    transform: scale(0, 1);
+  }
+  70% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.show {
+  transform-origin: left center 0px;
+  animation: linh 0.5s;
+}
+
+.show1 {
+  transform-origin: right center 0px;
+  animation: linh2 0.7s;
+}
+
+@keyframes linh2 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+  }
+}
+.show4 {
+  transform-origin: right center 0px;
+  animation: linh2 0.4s;
+}
+
+@keyframes linh4 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0, 1);
+  }
+}
+
+/*# sourceMappingURL=overlay.css.map */

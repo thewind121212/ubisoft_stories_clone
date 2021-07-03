@@ -1,0 +1,696 @@
+.nav {
+  display: flex;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+.nav .nav__menulist,
+.nav .nav__search,
+.nav .nav__logo {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__menulist {
+  background-color: #57ffab;
+  transition: 0.5s ease-out;
+  outline: none;
+  box-shadow: inset 0 0 0 0.01 black;
+}
+.nav .nav__menulist:hover {
+  cursor: pointer;
+  color: #58ffab;
+  box-shadow: inset 50px 0 0 0.01px black;
+}
+.nav .nav__menulist:hover .menubar_icon {
+  width: 100%;
+  fill: #57ffab;
+}
+.nav .nav__menulist .nav__menulist--Head {
+  display: none;
+  visibility: hidden;
+}
+.nav .nav__menulist_icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+}
+.nav .nav__menulist_icon .menubar_icon {
+  fill: black;
+  width: 100%;
+}
+.nav .nav__story {
+  width: calc(100% - 150px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__story .nav__story_icon {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url(https://storiesubisoft.herokuapp.com/assets/image/sample-background.png);
+  width: 72px;
+  height: 32px;
+  background-position: -585px -503.5px;
+  background-size: 842px 700px;
+  transition: transform 0.4s ease-out;
+  transform: translateY(50px);
+}
+.nav .nav__search {
+  background-color: #888;
+}
+.nav .nav__search .nav__search_icon {
+  font-size: 12px;
+  color: white;
+  transition: all 0.2s;
+}
+.nav .nav__search:hover .nav__search_icon {
+  font-size: 14px;
+}
+.nav .nav__search:hover {
+  background-color: #aaa;
+}
+.nav .nav__logo {
+  position: relative;
+  transition: 0.4s;
+}
+.nav .nav__logo:after {
+  content: "";
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: #58ffab;
+  position: absolute;
+  transition: 0.5s;
+}
+.nav .nav__logo:hover:after {
+  right: 0px;
+}
+.nav .nav__logo:hover .nav__logo--icon {
+  color: black;
+}
+.nav .nav__logo:hover .nav__logo--text {
+  color: black;
+}
+.nav .nav__logo .nav__logo--inner {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav__logo .nav__logo--inner .nav__logo_image {
+  width: 30px;
+  height: 30px;
+}
+.nav .nav__logo .nav__logo--inner .nav__logo--icon {
+  display: none !important;
+  color: #888888;
+  font-size: 18px;
+  transition: 0.4s;
+}
+.nav .nav__logo .nav__logo--inner .nav__logo--text {
+  display: none !important;
+  margin: 0 8px;
+  color: #888888;
+  font-family: "Ubisoft";
+  font-size: 18px;
+  font-weight: 100;
+}
+.nav .nav__logo:before {
+  position: absolute;
+  content: "";
+  border-left: 1px solid #888;
+  height: 100%;
+  left: 0;
+}
+.nav .logo__menu {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  transform: translate(0, -300px);
+  top: 50px;
+  background-color: black;
+  transition: 0.2s;
+}
+.nav .logo__menu ul.logo__menulist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav .logo__menu ul.logo__menulist li.logo__menulist--item {
+  width: 100%;
+  cursor: pointer;
+  padding-left: 20px;
+  font-family: "ubisoft";
+  color: #b5b5b5;
+  border-top: 1px solid #3e3e3e;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  height: 50px;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu {
+  width: 100%;
+  cursor: pointer;
+  font-family: "ubisoft";
+  padding-left: 20px;
+  color: #b5b5b5;
+  border-top: 1px solid #3e3e3e;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: auto;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--head .logo__menulist__submenu--text {
+  position: absolute;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--head .logo__menulist__submenu--icon {
+  transition: 0.4s;
+  position: absolute;
+  right: 20px;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--list {
+  display: none;
+  padding-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--list .submenu__item {
+  margin: 5px;
+  padding-left: 20px;
+  font-size: 14px;
+  list-style-type: none;
+  width: 100%;
+}
+.nav .logo__menu ul.logo__menulist .logo__menulist__submenu .logo__menulist__submenu--listshow {
+  display: flex;
+}
+.nav .logo__menu--show {
+  transform: translate(0);
+  opacity: 1 !important;
+}
+
+@media only screen and (min-width: 999px) {
+  .nav .nav__menulist {
+    width: 130px;
+  }
+  .nav .nav__menulist:hover {
+    cursor: pointer;
+    color: #58ffab;
+    box-shadow: inset 130px 0 0 0.01px black;
+  }
+  .nav .nav__menulist:hover .menubar_icon {
+    width: 100%;
+    fill: #57ffab;
+  }
+  .nav .nav__menulist .nav__menulist--Head {
+    display: block;
+    visibility: visible !important;
+    font-weight: bold;
+    margin-left: 11px;
+    font-size: 18px;
+    font-family: "CompactaBT";
+  }
+  .nav .nav__logo {
+    width: 192px;
+  }
+  .nav .nav__logo:after {
+    content: "";
+    right: -192px;
+    width: 192px;
+    height: 50px;
+    background-color: #58ffab;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .nav .nav__logo .nav__logo--inner .nav__logo--icon {
+    display: block !important;
+  }
+  .nav .nav__logo .nav__logo--inner .nav__logo--text {
+    display: block !important;
+  }
+  .nav .nav__logo:hover:after {
+    right: 0px;
+  }
+  .nav .nav__logo:hover .nav__logo--icon {
+    color: black;
+  }
+  .nav .nav__logo:hover .nav__logo--text {
+    color: black;
+  }
+  .nav .nav__story {
+    width: calc(100% - 370px);
+  }
+  .nav .logo__menu {
+    width: 192px;
+    right: 0px;
+  }
+}
+.contentblock3 {
+  width: 100%;
+  height: 56.25vw;
+  overflow: hidden;
+}
+.contentblock3 .contentblock3__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contentblock3 .contentblock3__inner .block3--background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Assets/image/FolderPreviewBlock.jpg");
+  background-size: cover;
+  transition: 0.2s ease;
+}
+.contentblock3 .contentblock3__inner .block3__content {
+  position: absolute;
+  width: 51%;
+  height: 48%;
+  left: 7%;
+  bottom: 0;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--background {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s ease;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  padding: 6.25vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--head {
+  color: #57ffab;
+  font-family: "ubisoft-bold";
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--sub {
+  color: white;
+  font-family: "CompactaBT";
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 30px 0;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--content {
+  font-family: "ubisoft";
+  margin-bottom: 30px;
+  color: white;
+  font-size: 17px;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--text {
+  color: white;
+  font-family: "ubisoft";
+  font-size: 0.75rem;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock .interact--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubisoft-bold";
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock .interact--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.contentblock3 .contentblock3__inner .block3__content .block3__content__inner .inner--wrap .block3__content--interact .interact--twoblock .interact--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+.contentblock3 .contentblock3__inner .block3__content:hover .inner--background {
+  transform: scale(1.05);
+}
+.contentblock3 .contentblock3__inner .block3__content:hover .block3--background {
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 660px) {
+  .block3__content--head {
+    font-size: 12px !important;
+  }
+
+  .block3__content--sub {
+    font-size: 32px !important;
+  }
+
+  .block3__content--content {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .contentblock3 {
+    height: 147.25vw !important;
+  }
+
+  .block3--background {
+    width: 100% !important;
+    height: 50% !important;
+  }
+
+  .block3__content {
+    width: 100% !important;
+    left: 0 !important;
+  }
+}
+.contentblock4 {
+  width: 100%;
+  height: 816.32px;
+  background-color: #EEEEEE;
+  padding: 6.25vw 0;
+}
+.contentblock4 .contentblock4__left {
+  width: 100%;
+  padding-top: 6.25vw;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner .conetentblock4__circle--wrap {
+  width: 43.75vw;
+  height: 43.75vw;
+  background-color: #57ffab;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner .conetentblock4__circle--wrap .hom--thu {
+  position: absolute;
+  width: 29.166625vw;
+  height: 31.95796216vw;
+  background-size: 95.93085254vw 79.75249023vw;
+  background-position: -66.65029541vw -0.11393213vw;
+  background-image: url("../Assets/image/sample-background.png");
+  left: 12%;
+  bottom: 0;
+}
+.contentblock4 .contentblock4__left .contentblock4__inner .conetentblock4__circle--wrap .gac--thu {
+  position: absolute;
+  width: 3.64582813vw;
+  height: 16.63409082vw;
+  background-size: 95.93085254vw 79.75249023vw;
+  background-position: -0.11393213vw -63.00446729vw;
+  background-image: url("../Assets/image/sample-background.png");
+  left: 41%;
+  top: 21%;
+}
+.contentblock4 .contentblock4__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 6.25vw;
+}
+.contentblock4 .contentblock4__right .right--head {
+  font-size: 25px;
+  font-family: "CompactaBT";
+  margin-bottom: 0.625em;
+}
+.contentblock4 .contentblock4__right .right--sub {
+  font-size: 16px;
+  font-family: "Roboto";
+  margin-bottom: 0.625em;
+  padding-right: 25vw;
+  line-height: 1.6875em;
+}
+.contentblock4 .contentblock4__right .contentblock4__inner {
+  justify-content: flex-end !important;
+}
+.contentblock4 .contentblock4__right .right--emailsend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contentblock4 .contentblock4__right .right--emailsend .emailsend--input {
+  width: 197px;
+  height: 50px;
+  border: 1px solid black;
+  padding-left: 5px;
+}
+.contentblock4 .contentblock4__right .right--emailsend .emailsend--submit {
+  width: 106px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-family: "ubisoft-bold";
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.block5 {
+  width: 100%;
+  height: 130px;
+  background-color: #57ffab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "CompactaBT";
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 999px) {
+  .contentblock4 {
+    display: flex;
+    flex-direction: row;
+    height: unset !important;
+  }
+  .contentblock4 .contentblock4__inner {
+    justify-content: flex-end !important;
+  }
+
+  .conetentblock4__circle--wrap {
+    width: 18.75vw !important;
+    height: 18.75vw !important;
+  }
+
+  .hom--thu {
+    width: 12.5vw !important;
+    height: 13.69628906vw !important;
+    background-size: 41.11328125vw 34.1796875vw !important;
+    background-position: -28.56445313vw -0.04882812vw !important;
+  }
+
+  .gac--thu {
+    width: 1.5625vw !important;
+    height: 7.12890625vw !important;
+    background-size: 41.11328125vw 34.1796875vw !important;
+    background-position: -0.04882812vw -27.00195313vw !important;
+  }
+
+  .right--sub {
+    padding: 0 !important;
+  }
+
+  .block5 {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 1250px) {
+  .contentblock4 .right--head {
+    font-size: 40px !important;
+  }
+  .contentblock4 .right--sub {
+    padding-right: 18vw !important;
+    font-size: 21px !important;
+  }
+  .contentblock4 .emailsend--input {
+    width: 250px !important;
+    height: 67px !important;
+  }
+  .contentblock4 .emailsend--submit {
+    width: 106px !important;
+    height: 67px !important;
+  }
+
+  .block5 {
+    font-size: 50px !important;
+  }
+}
+.inner--block5_1 {
+  background-image: url("../Assets/image/podcast1.jpg") !important;
+}
+
+.inner--block5_2 {
+  background-image: url("../Assets/image/podcast2.jpg") !important;
+}
+
+.inner--block5_3 {
+  background-image: url("../Assets/image/podcast3.jpg") !important;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer__social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.footer .footer__social .social--chiadoi {
+  width: 1px;
+  height: 36px;
+  background-color: white;
+}
+.footer .footer__social .social--ubisoftlogo {
+  margin-right: 20px;
+  width: 109.2px;
+  height: 36px;
+  background-position: -351px -264.9px;
+  background-size: 505.2px 420px;
+  background-image: url("../Assets/image/sample-background.png");
+}
+.footer .footer__social .social--network {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__social .social--network .network {
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 24px;
+  margin-left: 28px;
+}
+.footer .footer__social .social--network .facebook {
+  background-position: -817px -393.5px;
+  background-size: 842px 700px;
+  background-image: url("../Assets/image/sample-background.png");
+}
+.footer .footer__social .social--network .twitter {
+  background-image: url("../Assets/image/sample-background.png");
+  width: 24px;
+  height: 20px;
+  background-position: -817px -305.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__social .social--network .ig {
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 20px;
+  height: 20px;
+  background-position: -817px -327.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__social .social--network .linkin {
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 20px;
+  height: 20px;
+  background-position: -817px -371.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__social .social--network .youtube {
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 28px;
+  height: 20px;
+  background-position: -715px -503.5px;
+  background-size: 842px 700px;
+}
+.footer .footer__list {
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer .footer__list .list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer .footer__list .list .list-item {
+  margin: 5px 20px;
+  font-family: "ubisoft-bold";
+  color: #888888;
+}
+
+.footer__trademarks {
+  background-color: #212121;
+  font-family: "ubisoft";
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 11px;
+  color: #888;
+}
+
+/*# sourceMappingURL=nav_style.css.map */

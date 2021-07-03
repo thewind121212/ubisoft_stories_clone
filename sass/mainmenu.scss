@@ -1,0 +1,626 @@
+.overlay__main {
+    .mainmenu__container{
+            width: 87.5vw;
+            margin: 0 auto;
+        .mainmenu__container__top{
+            display: flex;
+            justify-content: end;
+            margin: 6.52vh 0 ;
+            .mainmenu__container__top--list {
+                width: 25vw;
+                display: flex;
+                align-items: flex-end;
+               .top__menulist {
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: center;
+                   list-style-type: none;
+                   .top__menulist__item {
+                       margin-bottom: .1875em;
+                        .top__menulist__item__link {
+                            color:#383838;
+                            list-style: none;
+                            font-size: 3.4375em;
+                            line-height: 1em;
+                            text-decoration: none;
+                            font-family: 'CompactaBT';
+                            text-transform: uppercase;
+                            transition:0.3s;
+                            }
+                        .top__menulist__item__link--on{
+                                    color:#f11d6b;
+                            
+                        }
+                   }
+                }
+            }
+            .mainmenu__container__top--image {
+                width: 62.5vw;
+                height: 25vw;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .top__imagebox {
+                    position: relative;
+                    overflow: hidden;
+                    .top__imagebox__inner {
+                        position: relative;
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 400%;
+                        transition: all 0.4s;
+                        .top__imagebox__inner--link {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            .top__imagebox__inner--text{
+                                left: 10px;
+                                bottom: 10px;
+                                color: white;
+                                position: absolute;
+                                font-size: 1.5em;
+                                font-family: 'CompactaBT';
+                                cursor: pointer;
+                                opacity: 0; 
+                                transition: 0.4s;
+                            }
+                            
+                            .top__imagebox__inner--timeread {
+                                position: absolute;
+                                background-color: #000;
+                                color:#fff;
+                                width: 4rem;
+                                height: 4rem;
+                                padding-top: 0.3125em;
+                                text-align: center;
+                                right:-4rem;
+                                transition: 0.4s;
+                                .time__duration {
+                                    color:#57ffab;
+                                    font-size: 2.8125em;
+                                    line-height: 1.125em;
+                                    font-family: "CompactaBT";
+                                }
+                                .time__unit {
+                                    color:white;
+                                    font-size: .5625em;
+                                    margin-top: -.625em;
+                                    text-transform: uppercase;
+                                    font-family: 'ubisoft-bold';
+                                }
+                            }
+
+                            .top__imagebox__inner--background {
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                background-repeat: none;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position:center center ;
+                                background-blend-mode: multiply;
+                                transition: all ease-out 0.3s;
+                            }
+                            &:hover {
+                                    .top__imagebox__inner--background {
+                                background-color: #f11d6b;
+                                transform: scale(1.06);
+                                    }
+                                    .top__imagebox__inner--text {
+                                        opacity: 1 !important;
+                                    }
+                                    .top__imagebox__inner--timeread {
+                                        right: 0;
+                                    }
+                            }
+                        }
+                    }
+                }
+                .top__image--1 {
+                        height: 25vw;
+                        width: 24.375vw;
+                }
+                .top__image--2 {
+                        height: 25vw;
+                        width: 18.125vw;
+                        background-color: red;
+                }
+                .top__image--3 {
+                    height: 12.1875vw;
+                    width: 18.125vw;
+                        background-color: red{
+
+                        }
+                }
+                .top__image--4 {
+                    height: 12.1875vw;
+                    width: 18.125vw;
+                        background-color: red;
+                }
+            }
+        }
+    }
+
+    .mainmenu__container__bottom {
+        color:ivory !important;
+        display: flex;
+        align-items: flex-end;
+            font-size: 1.4vw;
+        .mainmenu__bottom__first {
+            width: 25vw;
+            .first--list {
+            color:#fff;
+            list-style-type: none;
+            font-family: 'ubisoft-bold';
+            text-transform: uppercase;
+                &:hover {
+                cursor: pointer;
+                color:#57ffab;
+                }
+            }
+        }
+        .mainmenu__bottom__second {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between ;
+            width: 43.75vw;
+            .second--list {
+                list-style-type: none;
+                cursor: pointer;
+                font-family: 'ubisoft-bold';
+                width: 18.75vw;
+                text-transform: uppercase;
+               color:#555; 
+               &:hover {
+                   color: white;
+                   
+               }
+            }
+        }
+        .mainmenu__bottom__third {
+            width: 18.75vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mainmenu__bottom--head {
+                font-family: 'ubisoft-bold';
+                font-size: .9375em;
+                margin-bottom: .9375em;
+                letter-spacing: .025em;
+                text-transform: uppercase;
+               cursor: pointer; 
+            }
+            .mainmenu__bottom--share {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            .share__container {
+                overflow: hidden;
+                width: 3.125vw;
+                height: 3.125vw;
+                border: 2px solid #fff;
+                margin-left: -2px;
+                .wrap__container {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.4s;
+                .share__upper {
+                    width: 100%;
+                    padding: 30%;
+                    height: 100%;
+                    display: flex;
+                }
+                .share__below {
+                    margin-top: 2px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 30%;
+                    background-color: white;
+                }
+                }
+                &:hover {
+                    .wrap__container {
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            }
+        }
+    }
+
+    @media only screen and (max-width:999px) {
+            .overlay__main {
+                font-size: 16px !important;
+            }
+
+            .mainmenu__container__top--image {
+                display: none !important;
+                visibility: hidden !important;
+            }
+            
+            .mainmenu__container__bottom {
+                display: block !important;
+
+            }
+
+            .mainmenu__bottom__first {
+                width: 100vw !important;
+                font-size: 14px !important;
+            }
+
+            .mainmenu__bottom__second {
+               display: none !important; 
+               visibility: hidden !important ;
+            }
+
+            .mainmenu__bottom__third {
+                margin-top: 15px !important;
+                width: 87.5vw !important;
+                font-size: 11px !important;
+                .share__container {
+                    width: 41px !important;
+                    height: 41px !important;
+                }
+            }
+            }
+            @media only screen and (min-width:1131px) {
+                .top__menulist__item__link {
+                    font-size: 4.4375em !important;
+                }
+            }
+
+            @media only screen and (min-width:1500px) {
+                .top__menulist__item__link {
+                    font-size: 5.4375em !important;
+                }
+            }
+}
+
+
+.main__container {
+    .contentblock2 {
+        width: 100%;
+        height: 100vw;
+        overflow-x: scroll;
+        overflow-y: hidden ;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+        .contentblock2__inner {
+            position: relative;
+            width: 100%;
+            height: 90%;
+        .contentblock2__wrap {
+            position: absolute;
+            box-sizing: unset !important;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+               width: 300%;
+               height: 100%;
+               display: flex;
+            .contentblock2__1, .contentblock2__2,.contentblock2__3 {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                margin:  20px;
+            }
+                .block2__1--background {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    overflow:hidden;
+                    .background--inner {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.2s;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("../Assets/image/main-menu-8.jpg");
+                    };
+                }
+                .block2__2--background {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    .background--inner {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.2s;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("../Assets/image/main-menu-6.jpg");
+                    }
+                }
+                .block2__3--background {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    .background--inner {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.2s;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url("../Assets/image/main-menu-10.jpg");
+                    }
+                }
+
+                .background--border {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.2s;
+                }
+
+                .contentblock2__timeread {
+                    width: 5.125em;
+                    height: 5.125em;
+                    background-color: black;
+                    position: absolute;
+                    display: flex;
+                    right: 0px;
+
+                    .timeread__duration {
+                        font-size: 3em;
+                        width: 80%;
+                        height: 100%;
+                        font-family: 'CompactaBT';
+                        color: #57ffab;
+                        display: flex;
+                        justify-content: center ;
+                        align-items: center;
+                    }
+
+                    .timeread__unit {
+                        width: 20%;
+                        height: 100%;
+                        color: white;
+                        font-family: 'ubisoft-bold';
+                        font-size: .6875em;
+                        text-transform: uppercase;
+                        text-align: center;
+                        writing-mode: vertical-rl;
+                        transform: translateX(-10px);
+                    }
+                }   
+
+
+                    .contentblock2__text {
+                        width: 100%;
+                        margin-top:10px ;
+                        .block2__text--head {
+                            text-transform: uppercase;
+                            color: #821ae8;
+                            font-family: 'ubisoft-bold';
+                            font-size: 0.875rem;
+                            margin-bottom: 10px;
+                            cursor: pointer;
+                        }
+
+                        .block2__text--sub {
+                            text-transform: uppercase;
+                            font-size: 2rem;
+                            font-family: 'CompactaBT';
+                            background-image: linear-gradient( to right, #000 50%, rgb(241, 29, 107) 50%, rgb(241, 29, 107) );
+                            cursor: pointer;
+                            background-size: 200%;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            transition: 0.2s ease-out;
+                        }
+
+
+                    }
+
+
+
+
+                         .footer__twoblock {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 30%;
+
+                            .twoblock--brain {
+                                width: 50%;
+                                height: 32px;
+                                background-color: white;
+                                font-size: 0.6875em;
+                                color: black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px solid black;
+                                font-family: 'ubisoft-bold';
+                            }
+
+                            .twoblock--like {
+                                margin-left: 5px;
+                                width: 50%;
+                                height: 32px;
+                                background-color: white;
+                                border: 1px solid black;
+                                color: #f11d68;
+                                font-family: 'ubisoft-bold';
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 11px;
+
+                                .like--heart {
+                                    background-repeat: no-repeat;
+                                    background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+                                    width: 13px;
+                                    height: 13px;
+                                    background-position: -343.5px -251.75px;
+                                    background-size: 421px 350px;
+                                    display: block;
+                                    position: relative;
+                                    transform: translateX(2px);
+                                }
+                            }
+                        }
+                    }
+
+
+                        .contentblock2__footer {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 20px;
+
+                        .footer--text {
+                            color: black;
+                            font-family: 'ubisoft';
+                            font-size: 0.75rem;
+                        }
+
+                        .footer__twoblock {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 30%;
+
+                            .twoblock--brain {
+                                width: 50%;
+                                height: 32px;
+                                background-color: white;
+                                font-size: 0.6875em;
+                                color: black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: 'ubisoft-bold';
+                            }
+
+                            .twoblock--like {
+                                margin-left: 5px;
+                                width: 50%;
+                                height: 32px;
+                                background-color: white;
+                                color: #f11d68;
+                                font-family: 'ubisoft-bold';
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 11px;
+
+                                .like--heart {
+                                    background-repeat: no-repeat;
+                                    background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+                                    width: 13px;
+                                    height: 13px;
+                                    background-position: -343.5px -251.75px;
+                                    background-size: 421px 350px;
+                                    display: block;
+                                    position: relative;
+                                    transform: translateX(2px);
+                                }
+                            }
+                        }
+                    }
+        }
+        }
+
+        .contentblock2--hover {
+            &:hover {
+            .background--inner {
+                transform: scale(1.1);
+            }
+            .block2__text--sub {
+                background-position: -100%;
+            }
+            .background--border {
+                border: 6px solid #57ffab;
+                opacity: 1 !important;
+            }
+            }
+        }
+
+        @media only screen and  (max-width: 675px) {
+            .block2__text--sub {
+                font-size: 1.5rem !important;
+            }
+            
+        }
+
+
+        @media only screen and (max-width:500px) {
+            .contentblock2 {
+                height: 115vw;
+            }
+           .contentblock2__footer {
+               margin-top: 5px !important;
+           } 
+           .block2__text--sub {
+               font-size: 1.2rem !important;
+           }
+        }
+        @media only screen and (max-width:400px) {
+            .contentblock2 {
+                height: 140vw;
+            }
+           .contentblock2__footer {
+               margin-top: 5px !important;
+           } 
+           .block2__text--sub {
+               font-size: 0.9rem !important;
+           }
+        }
+        @media only screen and (min-width:999px) {
+            .contentblock2 {
+                padding: 5%;
+                height: 45vw !important;
+                overflow: hidden !important;
+
+            }
+            
+            .block2__text--sub {
+                font-size: unset !important;
+                display: block;
+                word-wrap: break-word !important;
+            }
+
+            .contentblock2__wrap {
+                width: 100% !important;
+            }
+        }
+
+        @media only screen and (min-width:1600px) {
+            .contentblock2 {
+                padding: 5%;
+                height: 45vw !important;
+                overflow: hidden !important;
+
+            }
+            
+            .block2__text--sub {
+                display: block;
+                word-wrap: break-word !important;
+                font-size: 2rem !important;
+            }
+
+            .contentblock2__wrap {
+                width: 100% !important;
+            }
+        }
+    }
+
+

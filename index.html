@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Ubisoft Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Navbar -->
+    <div class="nav">
+        <div class="nav__menulist">
+            <div class="nav__menulist_icon">
+                <svg viewBox="0 0 15 12">
+                    <path class="menubar_icon"
+                        d="M1,10h13c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H1c-0.6,0-1-0.4-1-1C0,10.4,0.4,10,1,10L1,10z"></path>
+                    <path class="menubar_icon"
+                        d="M1,5h13c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H1C0.4,7,0,6.6,0,6C0,5.4,0.4,5,1,5L1,5z"></path>
+                    <path class="menubar_icon"
+                        d="M1,0h13c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H1C0.4,2,0,1.6,0,1C0,0.4,0.4,0,1,0L1,0z"></path>
+                </svg>
+            </div>
+            <div class="nav__menulist--Head">MENU</div>
+        </div>
+        <div class="nav__search">
+            <div class="nav__search_icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="nav__story">
+            <div class="nav__story_icon"></div>
+        </div>
+        <div class="nav__logo">
+            <div class="nav__logo--inner">
+                <i class="nav__logo--icon fas fa-plus" style=""></i>
+                <div class="nav__logo--text">PLUS</div>
+                <img alt="logo" class="nav__logo_image" src="./Assets/image/menu-plus.png" />
+            </div>
+        </div>
+
+        <div class="logo__menu">
+            <ul class="logo__menulist">
+                <li class="logo__menulist--item">more games</li>
+                <li class="logo__menulist--item">ubisoft store</li>
+                <div class="logo__menulist__submenu">
+                    <div class="logo__menulist__submenu--head" data-load="0">
+                        <div class="logo__menulist__submenu--text" data-load="0">
+                            community
+                        </div>
+                        <i class="logo__menulist__submenu--icon fas fa-plus" data-load="0"></i>
+                    </div>
+                    <ul class="logo__menulist__submenu--list">
+                        <li class="submenu__item">Forums</li>
+                        <li class="submenu__item">Ubisoft Club</li>
+                        <li class="submenu__item">Playtest</li>
+                        <li class="submenu__item">Ubiblog</li>
+                    </ul>
+                </div>
+                <div class="logo__menulist__submenu">
+                    <div class="logo__menulist__submenu--head" data-load="1">
+                        <div class="logo__menulist__submenu--text" data-load="1">
+                            company
+                        </div>
+                        <i class="logo__menulist__submenu--icon fas fa-plus" data-load="1"></i>
+                    </div>
+                    <ul class="logo__menulist__submenu--list">
+                        <li class="submenu__item">Overview</li>
+                        <li class="submenu__item">Press</li>
+                        <li class="submenu__item">Investors</li>
+                    </ul>
+                </div>
+                <div class="logo__menulist__submenu">
+                    <div class="logo__menulist__submenu--head" data-load="2">
+                        <div class="logo__menulist__submenu--text" data-load="2">
+                            careers
+                        </div>
+                        <i class="logo__menulist__submenu--icon fas fa-plus" data-load="2"></i>
+                    </div>
+                    <ul class="logo__menulist__submenu--list">
+                        <li class="submenu__item">
+                            The Ubisoft Experience
+                        </li>
+                        <li class="submenu__item">Grads & Interns</li>
+                        <li class="submenu__item">Search for job</li>
+                        <li class="submenu__item">Our Location</li>
+                    </ul>
+                </div>
+                <li class="logo__menulist--item">support</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="overlay__twoWall">
+            <div class="overlay__wall1"></div>
+            <div class="overlay__wall2"></div>
+            <div class="overlay__main">
+                <div class="mainmenu__container">
+                    <div class="mainmenu__container__top">
+                        <div class="mainmenu__container__top--list">
+                            <ul class="top__menulist">
+                                <li class="top__menulist__item"><a href=""
+                                        class="top__menulist__item__link top__menulist__item__link--on"
+                                        data-number="0">brain</a></li>
+                                <li class="top__menulist__item"><a href="" class="top__menulist__item__link"
+                                        data-number="1">hands</a></li>
+                                <li class="top__menulist__item"><a href="" class="top__menulist__item__link"
+                                        data-number="2">heart</a></li>
+                                <li class="top__menulist__item"><a href="" class="top__menulist__item__link"
+                                        data-number="3"">thumbs up</a></li>
+
+                                </ul>
+                            </div>
+                            <div class=" mainmenu__container__top--image">
+                                        <div class="top__imagebox top__image--1" id="image__box1">
+                                            <div class="top__imagebox__inner"><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-0.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Créer la flore d'Assassin's
+                                                        Creed Valhalla</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">06</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-1.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">"Une odyssée de l’existence
+                                                    </div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">08</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-2.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Créatrice(s) : Diane Landais
+                                                    </div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">05</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-3.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Le monde d’Immortals : Fenyx
+                                                        Rising</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">02</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                        <div class="top__imagebox top__image--2" id="image__box2">
+                                            <div class="top__imagebox__inner"><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-4.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Qu’est-ce que la beauté des
+                                                        jeux vidéo ?</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">06</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-5.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">"Rayman, mon premier jeu
+                                                        vidéo"</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">08</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-6.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">S'expatrier à Saguenay</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">05</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-7.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Les recos de l'été</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">02</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                        <div class="top__imagebox top__image--3" id="image__box3">
+                                            <div class="top__imagebox__inner"><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-8.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Podcast #7 Pour quelques
+                                                        millisecondes de plus</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">16</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-9.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">He Works Where You Play :
+                                                        Line Designer</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">3</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-10.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Ubisoft Saguenay, Studio de
+                                                        demain</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">4</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-11.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">C'est à qui ce regard ?!
+                                                    </div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">2</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                        <div class="top__imagebox top__image--4" id="image__box4">
+                                            <div class="top__imagebox__inner"><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-12.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">He works where you play :
+                                                        Lead Audio</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">4</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-13.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Ubisoft x Glénat</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">2</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-14.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Secret Quest #8</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">3</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a><a class="top__imagebox__inner--link">
+                                                    <div class="top__imagebox__inner--background"
+                                                        style="background-image: url(&quot;Assets/image/main-menu-15.jpg&quot;);">
+                                                    </div>
+                                                    <div class="top__imagebox__inner--text">Assassin’s Creed revient en
+                                                        manga</div>
+                                                    <div class="top__imagebox__inner--timeread">
+                                                        <div class="time__duration">5</div>
+                                                        <div class="time__unit">minute</div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                        </div>
+                    </div>
+                    <div class="mainmenu__container__bottom">
+                        <ul class="mainmenu__bottom__first">
+                            <li class="first--list">Video</li>
+                            <li class="first--list">reportage</li>
+                            <li class="first--list">behind the sence</li>
+                        </ul>
+                        <ul class="mainmenu__bottom__second">
+                            <li class="second--list">Chronique</li>
+                            <li class="second--list">Data !</li>
+                            <li class="second--list">Rencontre</li>
+                            <li class="second--list">Desk anatomy</li>
+                            <li class="second--list">Intra muros</li>
+                            <li class="second--list">Slideshow</li>
+                        </ul>
+                        <div class="mainmenu__bottom__third">
+                            <p class="mainmenu__bottom--head">Partager stories.fr</p>
+                            <div class="mainmenu__bottom--share">
+                                <div class="share__container">
+                                    <div class="wrap__container">
+                                        <div class="share__upper share__facebook">
+                                            <svg viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="white"
+                                                        d="M22,9.7h-4.8V6.6c0-1.2,0.7-1.4,1.3-1.4c0.5,0,3.4,0,3.4,0V0h-4.6C12.1,0,11,3.8,11,6.2v3.5H8V15h3c0,6.8,0,15,0,15h6.2 c0,0,0-8.3,0-15h4.2L22,9.7z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="share__below share__facebook--below">
+                                            <svg viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="black"
+                                                        d="M22,9.7h-4.8V6.6c0-1.2,0.7-1.4,1.3-1.4c0.5,0,3.4,0,3.4,0V0h-4.6C12.1,0,11,3.8,11,6.2v3.5H8V15h3c0,6.8,0,15,0,15h6.2 c0,0,0-8.3,0-15h4.2L22,9.7z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share__container">
+                                    <div class="wrap__container">
+                                        <div class="share__upper share__twitter">
+                                            <svg viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="white"
+                                                        d="M30,5.7c-1.1,0.5-2.2,0.8-3.5,0.9c1.3-0.7,2.2-2,2.7-3.4C28,4,26.7,4.4,25.2,4.8c-1.2-1.2-2.7-1.9-4.5-1.9 c-3.4,0-6.1,2.7-6.1,6.1c0,0.5,0,0.9,0.1,1.4C9.7,10.2,5.1,7.7,2.1,3.9C1.6,4.9,1.2,5.9,1.2,7c0,2.1,1.1,4,2.7,5.1 c-1.1,0-1.9-0.4-2.8-0.7c0,0,0,0,0,0.1c0,2.9,2.1,5.4,4.9,6c-0.5,0.1-1.1,0.2-1.6,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.5,3.1,4.2,5.8,4.2c-2.1,1.6-4.7,2.6-7.6,2.6c-0.5,0-0.9,0-1.4-0.1C2.7,26.1,5.8,27,9.4,27c11.3,0,17.4-9.3,17.4-17.4 c0-0.2,0-0.5,0-0.8C28.1,8.1,29.1,6.9,30,5.7z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="share__below share__twitter--below">
+                                            <svg viewBox="0 0 30 30">
+                                                <g>
+                                                    <path fill="black"
+                                                        d="M30,5.7c-1.1,0.5-2.2,0.8-3.5,0.9c1.3-0.7,2.2-2,2.7-3.4C28,4,26.7,4.4,25.2,4.8c-1.2-1.2-2.7-1.9-4.5-1.9 c-3.4,0-6.1,2.7-6.1,6.1c0,0.5,0,0.9,0.1,1.4C9.7,10.2,5.1,7.7,2.1,3.9C1.6,4.9,1.2,5.9,1.2,7c0,2.1,1.1,4,2.7,5.1 c-1.1,0-1.9-0.4-2.8-0.7c0,0,0,0,0,0.1c0,2.9,2.1,5.4,4.9,6c-0.5,0.1-1.1,0.2-1.6,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.5,3.1,4.2,5.8,4.2c-2.1,1.6-4.7,2.6-7.6,2.6c-0.5,0-0.9,0-1.4-0.1C2.7,26.1,5.8,27,9.4,27c11.3,0,17.4-9.3,17.4-17.4 c0-0.2,0-0.5,0-0.8C28.1,8.1,29.1,6.9,30,5.7z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share__container">
+                                    <div class="wrap__container">
+                                        <div class="share__upper share__linkedin">
+                                            <svg viewBox="0 0 30 30">
+                                                <rect fill="white" x="0.3" y="9.8" width="6.2" height="20"></rect>
+                                                <path fill="white"
+                                                    d="M3.4,7.1c-2,0-3.6-1.6-3.6-3.6c0-2,1.6-3.6,3.6-3.6c2,0,3.6,1.6,3.6,3.6C7,5.5,5.4,7.1,3.4,7.1z">
+                                                </path>
+                                                <path fill="white"
+                                                    d="M29.8,29.8h-6.2v-9.7c0-2.3,0-5.3-3.2-5.3c-3.2,0-3.7,2.5-3.7,5.1v9.9h-6.2v-20h6v2.7h0.1 c0.8-1.6,2.9-3.2,5.9-3.2c6.3,0,7.5,4.1,7.5,9.5V29.8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <div class="share__below share__linkedin--below">
+                                            <svg viewBox="0 0 30 30">
+                                                <rect fill="black" x="0.3" y="9.8" width="6.2" height="20"></rect>
+                                                <path fill="black"
+                                                    d="M3.4,7.1c-2,0-3.6-1.6-3.6-3.6c0-2,1.6-3.6,3.6-3.6c2,0,3.6,1.6,3.6,3.6C7,5.5,5.4,7.1,3.4,7.1z">
+                                                </path>
+                                                <path fill="black"
+                                                    d="M29.8,29.8h-6.2v-9.7c0-2.3,0-5.3-3.2-5.3c-3.2,0-3.7,2.5-3.7,5.1v9.9h-6.2v-20h6v2.7h0.1 c0.8-1.6,2.9-3.2,5.9-3.2c6.3,0,7.5,4.1,7.5,9.5V29.8z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="share__container">
+                                    <div class="wrap__container">
+                                        <div class="share__upper share__linkedin">
+                                            <svg viewBox="0 0 80 54.22">
+                                                <g>
+                                                    <path fill="white"
+                                                        d="M40.1,30.93,80.58,5.06V3.53a3,3,0,0,0-3-3h-74a3,3,0,0,0-3,3v1.7Z"
+                                                        transform="translate(-0.58 -0.56)"></path>
+                                                    <path fill="white"
+                                                        d="M40.06,39,.58,13.33V51.8a3,3,0,0,0,3,3H77.61a3,3,0,0,0,3-3V13.12Z"
+                                                        transform="translate(-0.58 -0.56)"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <div class="share__below share__linkedin--below" style="margin-top: 5px;">
+                                            <svg viewBox="0 0 80 54.22">
+                                                <g>
+                                                    <path fill="black"
+                                                        d="M40.1,30.93,80.58,5.06V3.53a3,3,0,0,0-3-3h-74a3,3,0,0,0-3,3v1.7Z"
+                                                        transform="translate(-0.58 -0.56)"></path>
+                                                    <path fill="black"
+                                                        d="M40.06,39,.58,13.33V51.8a3,3,0,0,0,3,3H77.61a3,3,0,0,0,3-3V13.12Z"
+                                                        transform="translate(-0.58 -0.56)"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main__container">
+        <div class="coverblock">
+            <div class="coverblock__inner">
+                <div class="coverblock__header">
+                    <div class="coverblock__header--logo" style="fill:white">
+                        <svg viewBox="0 0 234.9 42.9" style="height: 100%;">
+                            <path d="M17.1,42.9c-2.8,0-5.2-0.4-7.4-1.3c-2.1-0.9-3.9-2.1-5.4-3.6c-1.4-1.5-2.5-3.4-3.3-5.5C0.4,30.4,0,28.1,0,25.6V0.7h9v24.2
+                            c0,3,0.7,5.4,2.1,7c1.4,1.6,3.4,2.5,6.1,2.5c2.6,0,4.7-0.8,6.1-2.5c1.4-1.6,2.1-4,2.1-7V0.7h9v24.9c0,2.5-0.4,4.8-1.1,6.9
+                            c-0.8,2.1-1.8,3.9-3.3,5.5c-1.4,1.5-3.2,2.7-5.4,3.6C22.4,42.5,19.9,42.9,17.1,42.9z"></path>
+                            <path d="M40.3,0.7h13.8c2,0,3.8,0.2,5.5,0.7c1.6,0.5,3,1.1,4.2,2c1.2,0.9,2.1,1.9,2.7,3.1c0.6,1.2,0.9,2.6,0.9,4.2
+                            c0,2.4-0.5,4.3-1.5,5.7c-1,1.4-2.3,2.5-4,3.2c2.2,0.8,4,2,5.4,3.6c1.4,1.6,2,3.8,2,6.6c0,1.8-0.3,3.4-1,5
+                            c-0.7,1.5-1.7,2.8-2.9,3.9c-1.3,1.1-2.8,1.9-4.7,2.6c-1.8,0.6-3.9,0.9-6.1,0.9H40.3V0.7z M54.1,17.4c1.4,0,2.5-0.4,3.4-1.2
+                            c0.9-0.8,1.3-1.8,1.3-3.2c0-1.4-0.4-2.5-1.3-3.2c-0.9-0.8-2-1.2-3.4-1.2h-4.7v8.8H54.1z M54.3,34.3c1.9,0,3.4-0.4,4.5-1.3
+                            c1-0.9,1.6-2.2,1.6-3.9c0-1.7-0.5-3-1.6-3.9c-1-0.9-2.5-1.3-4.5-1.3h-5v10.4H54.3z"></path>
+                            <path d="M73.9,0.7h9v41.5h-9V0.7z"></path>
+                            <path d="M103,42.9c-3.6,0-6.7-0.8-9.3-2.3c-2.6-1.6-4.5-3.8-5.7-6.8l7.2-5.3c0.7,1.9,1.8,3.4,3.3,4.4c1.5,1.1,3.1,1.6,4.8,1.6
+                            c1.5,0,2.7-0.4,3.7-1.1c0.9-0.8,1.4-1.8,1.4-3.1c0-0.6-0.1-1.2-0.4-1.7c-0.2-0.5-0.6-1-1.2-1.5c-0.6-0.5-1.3-1-2.3-1.5
+                            c-1-0.5-2.2-1-3.7-1.5c-1.6-0.6-3.1-1.2-4.4-2c-1.4-0.7-2.6-1.6-3.6-2.5c-1-1-1.8-2.1-2.3-3.4c-0.6-1.3-0.8-2.8-0.8-4.5
+                            c0-1.7,0.3-3.2,1-4.6s1.6-2.7,2.8-3.7c1.2-1,2.6-1.9,4.3-2.5c1.7-0.6,3.5-0.9,5.5-0.9c3.2,0,6,0.6,8.3,1.9
+                            c2.4,1.3,4.1,3.2,5.2,5.7l-7.2,5C109,11,108.1,9.8,107,9c-1.1-0.8-2.5-1.2-4.1-1.2c-1.4,0-2.5,0.3-3.4,1c-0.9,0.7-1.3,1.5-1.3,2.6
+                            c0,1.2,0.6,2.3,1.9,3.1c1.3,0.9,3.5,1.9,6.6,3c3.6,1.2,6.2,2.7,8.1,4.6c1.8,1.8,2.7,4.3,2.7,7.5c0,2.1-0.4,4-1.2,5.7
+                            c-0.8,1.7-1.8,3.1-3.1,4.2c-1.3,1.1-2.8,2-4.6,2.6C106.8,42.7,105,42.9,103,42.9z"></path>
+                            <path
+                                d="M143,0c3.1,0,5.9,0.6,8.5,1.7c2.6,1.1,4.8,2.6,6.7,4.5c1.9,1.9,3.3,4.2,4.4,6.8c1,2.6,1.6,5.4,1.6,8.5
+                            c0,3-0.5,5.9-1.6,8.5c-1,2.6-2.5,4.9-4.4,6.8c-1.9,1.9-4.1,3.4-6.7,4.5c-2.6,1.1-5.4,1.6-8.5,1.6c-3.2,0-6-0.5-8.6-1.6
+                            c-2.6-1.1-4.8-2.5-6.7-4.3c-1.9-1.8-3.3-3.9-4.3-6.4c-1-2.4-1.5-5-1.5-7.7c0-3.6,0.6-6.7,1.9-9.3c1.3-2.6,2.9-4.7,5-6.4l-1.4-1.4
+                            c1.6-1.7,3.7-3,6.5-4.2C136.6,0.6,139.6,0,143,0z M143,34.4c1.8,0,3.5-0.3,4.9-1c1.5-0.7,2.7-1.6,3.8-2.7c1-1.1,1.9-2.5,2.4-4.1
+                            c0.6-1.6,0.9-3.3,0.9-5.2c0-1.9-0.3-3.6-0.9-5.2c-0.6-1.6-1.4-2.9-2.4-4.1c-1-1.1-2.3-2-3.8-2.7c-1.5-0.7-3.1-1-4.9-1
+                            c-2.1,0-4,0.4-5.5,1.1c-1.5,0.7-2.8,1.6-3.7,2.6l1.4,1.4c-1.1,0.9-2.1,2.1-2.9,3.4c-0.8,1.4-1.2,3.2-1.2,5.5
+                            c0,1.6,0.3,3.1,0.8,4.5c0.5,1.4,1.3,2.7,2.3,3.8c1,1.1,2.3,1.9,3.8,2.6C139.4,34.1,141.1,34.4,143,34.4z">
+                            </path>
+                            <path d="M178.5,9.3v9.6h17.6v6.9h-17.6v16.6h-9V0.7h28.4v8.5H178.5z"></path>
+                            <path d="M234.9,9.3h-11.6v33h-9v-33h-11.7V0.7h32.3V9.3z"></path>
+                        </svg>
+                    </div>
+                    <div class="coverblock__header__stories--inner">
+                        <div class="coverblock__header--stories"></div>
+                    </div>
+
+                </div>
+                <div class="coverblock__list">
+                    <div class="coverblock__list__item">
+                        <div class="coverblock__list__item--head">Rencontre</div>
+                        <div class="coverblock__list__item--content" style="text-transform: uppercase;">Créatrice(s) :
+                            Diane Landais</div>
+                        <hr>
+                    </div>
+                    <div class="coverblock__list__item">
+                        <div class="coverblock__list__item--head">Video</div>
+                        <div class="coverblock__list__item--content">"Une odyssée de l’existence"</div>
+                        <hr>
+                    </div>
+                    <div class="coverblock__list__item">
+                        <div class="coverblock__list__item--head">Video</div>
+                        <div class="coverblock__list__item--content">Créer la flore d'Assassin's Creed Valhalla</div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentblock1" style="margin-top: 25px;">
+            <div class="contentblock1__inner">
+                <div class="contentblock1__0">
+                    <div class="contentblock1__0__inner">
+                        <div class="contentblock1__0--image">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="contentblock1__1">
+                    <div class="contentblock1__1__inner">
+                        <div class="contentblock1__watermark">Rencontre</div>
+                        <div class="contentblock1__arrow">
+                            <div class="arrow__body"></div>
+                            <div class="arrow__upper"></div>
+                            <div class="arrow__below"></div>
+                        </div>
+                        <div class="contentblock1__timeread">
+                            <div class="timeread__duration">04</div>
+                            <div class="timeread__unit">minute</div>
+                        </div>
+                        <div class="contentblock1__text">
+                            <div class="block1__text--head">Rencontre</div>
+                            <div class="block1__text--sub">Qu’est-ce que la beauté des jeux vidéo ?</div>
+                        </div>
+                        <div class="contentblock1__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">BRAIN</div>
+                                <div class="twoblock--like">17 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentblock2" style="margin: 25px 0;">
+            <div class="contentblock2__inner">
+                <div class="contentblock2__wrap">
+                    <div class="contentblock2__1 contentblock2--hover">
+                        <div class="block2__1--background">
+                            <div class="background--inner"></div>
+                            <div class="background--border"></div>
+                            <div class="contentblock2__timeread">
+                                <div class="timeread__duration">16</div>
+                                <span class="timeread__unit">minute</span>
+                            </div>
+                        </div>
+                        <div class="contentblock2__text">
+                            <div class="block2__text--head">Rencontre</div>
+                            <div class="block2__text--sub">PODCAST #7 </div>
+                        </div>
+                        <div class="contentblock2__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">BRAIN</div>
+                                <div class="twoblock--like">11 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentblock2__2 contentblock2--hover">
+                        <div class="block2__2--background">
+                            <div class="background--inner"></div>
+                            <div class="background--border"></div>
+                            <div class="contentblock2__timeread">
+                                <div class="timeread__duration">03</div>
+                                <span class="timeread__unit">minute</span>
+                            </div>
+                        </div>
+                        <div class="contentblock2__text">
+                            <div class="block2__text--head">Rencontre</div>
+                            <div class="block2__text--sub">S'EXPATRIER À SAGUENAY</div>
+                        </div>
+                        <div class="contentblock2__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">HEART</div>
+                                <div class="twoblock--like">16 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentblock2__3 contentblock2--hover">
+                        <div class="block2__3--background">
+                            <div class="background--inner"></div>
+                            <div class="background--border"></div>
+                            <div class="contentblock2__timeread">
+                                <div class="timeread__duration">04</div>
+                                <span class="timeread__unit">minute</span>
+                            </div>
+                        </div>
+                        <div class="contentblock2__text">
+                            <div class="block2__text--head">Rencontre</div>
+                            <div class="block2__text--sub">UBISOFT SAGUENAY, STUDIO DE DEMAIN</div>
+                        </div>
+                        <div class="contentblock2__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">HEART</div>
+                                <div class="twoblock--like">40 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="contentblock3">
+        <div class="contentblock3__inner">
+            <div src="" alt="" class="block3--background"> </div>
+            <div class="block3__content">
+                <div class="block3__content__inner">
+                    <div class="inner--background"></div>
+                    <div class="inner--wrap">
+                        <div class="block3__content--head">
+                            Grand format
+                        </div>
+                        <div class="block3__content--sub">Chasser les bugs</div>
+                        <div class="block3__content--content">
+                            Comment Ubisoft travaille pour traquer, comprendre et
+                            réparer les bugs qui peuvent surgir dans ses jeux.
+                        </div>
+                        <div class="block3__content--interact">
+                            <div class="interact--text">il y a 3 semaines</div>
+                            <div class="interact--twoblock">
+                                <div class="interact--brain">HEART</div>
+                                <div class="interact--like">40 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contentblock4">
+        <div class="contentblock4__left">
+            <div class="contentblock4__inner">
+
+                    <div class="conetentblock4__circle--wrap">
+                            <div class="hom--thu"></div>
+                            <div class="gac--thu"></div>
+                    </div>
+            </div>
+        </div>
+        <div class="contentblock4__right">
+            <div class="right--head">RECEVEZ NOS STORIES <br>
+PAR MAIL !</div>
+            <div class="right--sub">Une fois par mois, Stories vous présente dans sa newsletter un nouveau regard sur le jeu vidéo à travers des rencontres, reportages, vidéos, data, coulisses, initiatives…</div>
+            <div class="right--emailsend">
+                <input class="emailsend--input" type="email" name="" id="" placeholder="votre email">
+                <div class="emailsend--submit">S'abonner</div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+            <div class="contentblock2" style="margin: 25px 0;">
+            <div class="contentblock2__inner">
+                <div class="contentblock2__wrap">
+                    <div class="contentblock2__1 contentblock2--hover">
+                        <div class="block2__1--background">
+                            <div class="background--inner inner--block5_1"></div>
+                            <div class="background--border"></div>
+                            <div class="contentblock2__timeread">
+                                <div class="timeread__duration">16</div>
+                                <span class="timeread__unit">minute</span>
+                            </div>
+                        </div>
+                        <div class="contentblock2__text">
+                            <div class="block2__text--head">Rencontre</div>
+                            <div class="block2__text--sub">PODCAST #1, LES DRAGONS D'OAKLAND </div>
+                        </div>
+                        <div class="contentblock2__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">BRAIN</div>
+                                <div class="twoblock--like">23 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentblock2__2 contentblock2--hover">
+                        <div class="block2__2--background">
+                            <div class="background--inner inner--block5_2" ></div>
+                            <div class="background--border"></div>
+                            <div class="contentblock2__timeread">
+                                <div class="timeread__duration">18</div>
+                                <span class="timeread__unit">minute</span>
+                            </div>
+                        </div>
+                        <div class="contentblock2__text">
+                            <div class="block2__text--head">Rencontre</div>
+                            <div class="block2__text--sub">PODCAST #2, LE SON DE LA POUDREUSE</div>
+                        </div>
+                        <div class="contentblock2__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">HEART</div>
+                                <div class="twoblock--like">19 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentblock2__3 contentblock2--hover">
+                        <div class="block2__3--background">
+                            <div class="background--inner inner--block5_3"></div>
+                            <div class="background--border"></div>
+                            <div class="contentblock2__timeread">
+                                <div class="timeread__duration">16</div>
+                                <span class="timeread__unit">minute</span>
+                            </div>
+                        </div>
+                        <div class="contentblock2__text">
+                            <div class="block2__text--head">Rencontre</div>
+                            <div class="block2__text--sub">PODCAST #3, FOND VERT & GANTS BLANCS</div>
+                        </div>
+                        <div class="contentblock2__footer">
+                            <div class="footer--text">il y a 3 semaines</div>
+                            <div class="footer__twoblock">
+                                <div class="twoblock--brain">HEART</div>
+                                <div class="twoblock--like">10 <i class="like--heart"> </i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block5">Charger plus</div>
+    </div>
+<div class="footer">
+    <div class="footer__social">
+        <div class="social--ubisoftlogo"></div>
+        <div class="social--chiadoi"></div>
+        <div class="social--network">
+                <div class="network facebook"></div>
+                <div class="network twitter"></div>
+                <div class="network ig"></div>
+                <div class="network linkin"></div>
+                <div class="network youtube"></div>
+        </div>
+    </div>
+    <div class="footer__list">
+        <ul class="list">
+            <li class="list-item">Ubisoft.com</li>
+            <li class="list-item">A propos d'Ubisoft</li>
+            <li class="list-item">Rejoindre Ubisoft</li>
+            <li class="list-item">Crédits et contacts</li>
+            <li class="list-item">Mentions légales, conditions et confidentialité</li>
+        </ul>
+    </div>
+</div>
+    <div class="footer__trademarks">
+        ©2021 UBISOFT ENTERTAINMENT. ALL RIGHTS RESERVED. UBISOFT, AND THE UBISOFT LOGO ARE TRADEMARKS OF UBISOFT ENTERTAINMENT IN THE US AND/OR OTHER COUNTRIES.
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

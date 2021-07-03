@@ -1,0 +1,382 @@
+.main__container {
+    margin-top: 50px;
+    z-index: 0;
+    width: 100%;
+    overflow: hidden;
+
+    .coverblock {
+        position: relative;
+        width: 100%;
+        background-image: url("../Assets/image/home.jpg");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .coverblock__inner {
+            padding: 6.25vw 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 92vw;
+
+            .coverblock__header {
+                transform: translate3d(0px, -23.8197px, 0px);
+                padding: 12.5vw 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+                .coverblock__header--logo {
+                    height: 3vw;
+                }
+
+                .coverblock__header--stories {
+                    background-image: url("https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 62.5vw;
+                    height: 29.42439863vw;
+                    background-size: 90.4209622vw 75.17182131vw;
+                    background-position: -.10738832vw -29.74656357vw;
+                }
+
+            }
+        }
+
+        .coverblock__list {
+            width: 100%;
+
+            .coverblock__list__item {
+                margin-bottom: 3.4375em;
+
+                .coverblock__list__item--head {
+                    width: fit-content;
+                    cursor: pointer;
+                    color: #57ffab;
+                    background-color: black;
+                    font-family: 'ubisoft-bold';
+                    font-size: 0.875em;
+                    text-transform: uppercase;
+                    padding: .0625em .3125em;
+                    margin-bottom: 10px;
+                }
+
+                .coverblock__list__item--content {
+                    font-size: 2.25em;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-family: 'CompactaBT';
+                    color: #fff;
+                    transition: 0.5s;
+                }
+
+                hr {
+                    width: 0px;
+                    height: 2px;
+                    background-color: #57ffab;
+                    transition: 0.3s ease;
+                }
+
+                &:hover {
+                    hr {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width:999px) {
+        .coverblock__header {
+            padding: 6.5vw !important;
+            padding-bottom: 0 !important;
+        }
+
+        .coverblock__header--logo {
+            height: 2.1vw !important;
+            transform: translateY(3.5rem);
+        }
+
+        .coverblock__header__stories--inner {
+            transform: scale(0.7);
+        }
+
+        .coverblock__list__item--head {
+            font-size: 1.5rem !important;
+        }
+
+        .coverblock__list__item--content {
+            font-size: 3.25em !important;
+        }
+    }
+
+    @media only screen and (min-width:1500px) {
+        .coverblock__header {
+            padding: 0 !important;
+        }
+
+
+        .coverblock__list__item--content {
+            font-size: 4em !important;
+            width: 47.5vw !important;
+        }
+
+        .coverblock__list__item--head {
+            font-size: 2em !important;
+        }
+    }
+}
+
+.main__container {
+    .contentblock1 {
+        overflow: hidden;
+        width: 100%;
+        height: 430px;
+
+        .contentblock1__inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .contentblock1__1 {
+                width: 100%;
+                padding: 2.125vw 4.25vw 0.75vw 3.25vw;
+                height: 100%;
+                background-color: #821AE8;
+                     overflow: hidden;
+                .contentblock1__1__inner {
+                    width: 100%;
+                    height: 100%;
+                     position: relative;
+                    .contentblock1__watermark {
+                        position: absolute;
+                        font-size: 12.5em;
+                        color: #000;
+                        font-family: 'CompactaBT';
+                        text-transform: uppercase;
+                        opacity: 0.2;
+                        white-space: nowrap;
+                        right: -64%;
+                        top: 29%;
+                    }
+
+                    .contentblock1__timeread {
+                        width: 5.125em;
+                        height: 5.125em;
+                        background-color: transparent;
+                        position: absolute;
+                        right: -36px;
+
+                        .timeread__duration {
+                            font-size: 3em;
+                            position: relative;
+                            top: .0625em;
+                            right: .3125em;
+                            font-family: 'CompactaBT';
+                            color: #57ffab;
+                        }
+
+                        .timeread__unit {
+                            color: white;
+                            font-family: 'ubisoft-bold';
+                            font-size: .6875em;
+                            text-transform: uppercase;
+                            transform: rotate(90deg) translateX(-13px);
+                        }
+                    }
+
+                    .contentblock1__arrow {
+                        position: relative;
+                        top: 50px;
+                        width: 20%;
+                        height: 20px;
+                        transition: 0.4s;
+
+                        .arrow__body {
+                            position: absolute;
+                            width: 100%;
+                            height: 1px;
+                            background-color: white;
+                        }
+
+                        .arrow__upper {
+                            position: absolute;
+                            width: 20px;
+                            height: 1px;
+                            background-color: white;
+                            right: -2px;
+                            top: -7px;
+                            transform: rotate(45deg);
+                        }
+
+                        .arrow__below {
+                            position: absolute;
+                            width: 20px;
+                            height: 1px;
+                            background-color: white;
+                            transform: rotate(-45deg);
+                            right: -3px;
+                            bottom: 12px;
+                        }
+
+                        &:hover {
+                            width: 60%;
+                        }
+                    }
+
+                    .contentblock1__text {
+                        width: 100%;
+                        position: absolute;
+                        bottom: 90px;
+
+                        .block1__text--head {
+                            text-transform: uppercase;
+                            color: #57ffab;
+                            font-family: 'ubisoft-bold';
+                            font-size: 0.875rem;
+                            margin-bottom: 20px;
+                        }
+
+                        .block1__text--sub {
+                            text-transform: uppercase;
+                            color: white;
+                            font-size: 2rem;
+                            font-family: 'CompactaBT';
+                        }
+
+                    }
+
+                    .contentblock1__footer {
+                        position: absolute;
+                        width: 100%;
+                        bottom: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .footer--text {
+                            color: white;
+                            font-family: 'ubisoft';
+                            font-size: 0.75rem;
+                        }
+
+                        .footer__twoblock {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 30%;
+
+                            .twoblock--brain {
+                                width: 50%;
+                                height: 32px;
+                                background-color: white;
+                                font-size: 0.6875em;
+                                color: black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: 'ubisoft-bold';
+                            }
+
+                            .twoblock--like {
+                                margin-left: 5px;
+                                width: 50%;
+                                height: 32px;
+                                background-color: white;
+                                color: #f11d68;
+                                font-family: 'ubisoft-bold';
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 11px;
+
+                                .like--heart {
+                                    background-repeat: no-repeat;
+                                    background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+                                    width: 13px;
+                                    height: 13px;
+                                    background-position: -343.5px -251.75px;
+                                    background-size: 421px 350px;
+                                    display: block;
+                                    position: relative;
+                                    transform: translateX(2px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1079px) {
+        .contentblock1__1 {
+            width: 50% !important;
+            height: 100%;
+        }
+
+        .contentblock1 {
+            width: 100%;
+            height: 50vw !important;
+        }
+
+        .contentblock1__text {
+            .block1__text--sub {
+                font-size: 3.25em !important;
+            }
+        }
+
+        .contentblock1__0 {
+            width: 50%;
+            height: 100%;
+            background-color: red;
+            .contentblock1__0__inner {
+                width: 100%;
+                height: 100%;
+                background-image: url("../Assets/image/main-menu-4.jpg");
+                background-repeat: no-repeat;
+                background-size: cover; 
+                background-position: center;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1500px) {
+        .contentblock1__text {
+
+        .block1__text--sub {
+            font-size: 5.25em !important;
+        }
+
+        .footer--text {
+            font-size: 1.75rem !important;
+        }
+
+        .timeread__duration {
+            font-size: 4rem !important;
+        }
+
+
+        .contentblock1__text {
+            bottom: 150px !important; 
+        }
+
+
+        .block1__text--head {
+            font-size: 1.875rem !important;
+        }
+
+        .timeread__unit {
+            font-size: 16px !important;
+            transform: rotate(
+                90deg
+                ) translate(-33px, -5px) !important;
+        }
+        }
+
+    }
+}

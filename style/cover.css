@@ -1,0 +1,320 @@
+.main__container {
+  margin-top: 50px;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.main__container .coverblock {
+  position: relative;
+  width: 100%;
+  background-image: url("../Assets/image/home.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__container .coverblock .coverblock__inner {
+  padding: 6.25vw 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+}
+.main__container .coverblock .coverblock__inner .coverblock__header {
+  transform: translate3d(0px, -23.8197px, 0px);
+  padding: 12.5vw 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main__container .coverblock .coverblock__inner .coverblock__header .coverblock__header--logo {
+  height: 3vw;
+}
+.main__container .coverblock .coverblock__inner .coverblock__header .coverblock__header--stories {
+  background-image: url("https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 62.5vw;
+  height: 29.42439863vw;
+  background-size: 90.4209622vw 75.17182131vw;
+  background-position: -0.10738832vw -29.74656357vw;
+}
+.main__container .coverblock .coverblock__list {
+  width: 100%;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item {
+  margin-bottom: 3.4375em;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item .coverblock__list__item--head {
+  width: fit-content;
+  cursor: pointer;
+  color: #57ffab;
+  background-color: black;
+  font-family: "ubisoft-bold";
+  font-size: 0.875em;
+  text-transform: uppercase;
+  padding: 0.0625em 0.3125em;
+  margin-bottom: 10px;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item .coverblock__list__item--content {
+  font-size: 2.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "CompactaBT";
+  color: #fff;
+  transition: 0.5s;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item hr {
+  width: 0px;
+  height: 2px;
+  background-color: #57ffab;
+  transition: 0.3s ease;
+}
+.main__container .coverblock .coverblock__list .coverblock__list__item:hover hr {
+  width: 150px;
+}
+@media only screen and (min-width: 999px) {
+  .main__container .coverblock__header {
+    padding: 6.5vw !important;
+    padding-bottom: 0 !important;
+  }
+  .main__container .coverblock__header--logo {
+    height: 2.1vw !important;
+    transform: translateY(3.5rem);
+  }
+  .main__container .coverblock__header__stories--inner {
+    transform: scale(0.7);
+  }
+  .main__container .coverblock__list__item--head {
+    font-size: 1.5rem !important;
+  }
+  .main__container .coverblock__list__item--content {
+    font-size: 3.25em !important;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .main__container .coverblock__header {
+    padding: 0 !important;
+  }
+  .main__container .coverblock__list__item--content {
+    font-size: 4em !important;
+    width: 47.5vw !important;
+  }
+  .main__container .coverblock__list__item--head {
+    font-size: 2em !important;
+  }
+}
+
+.main__container .contentblock1 {
+  overflow: hidden;
+  width: 100%;
+  height: 430px;
+}
+.main__container .contentblock1 .contentblock1__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 {
+  width: 100%;
+  padding: 2.125vw 4.25vw 0.75vw 3.25vw;
+  height: 100%;
+  background-color: #821AE8;
+  overflow: hidden;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__watermark {
+  position: absolute;
+  font-size: 12.5em;
+  color: #000;
+  font-family: "CompactaBT";
+  text-transform: uppercase;
+  opacity: 0.2;
+  white-space: nowrap;
+  right: -64%;
+  top: 29%;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__timeread {
+  width: 5.125em;
+  height: 5.125em;
+  background-color: transparent;
+  position: absolute;
+  right: -36px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__timeread .timeread__duration {
+  font-size: 3em;
+  position: relative;
+  top: 0.0625em;
+  right: 0.3125em;
+  font-family: "CompactaBT";
+  color: #57ffab;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__timeread .timeread__unit {
+  color: white;
+  font-family: "ubisoft-bold";
+  font-size: 0.6875em;
+  text-transform: uppercase;
+  transform: rotate(90deg) translateX(-13px);
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow {
+  position: relative;
+  top: 50px;
+  width: 20%;
+  height: 20px;
+  transition: 0.4s;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow .arrow__body {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow .arrow__upper {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  right: -2px;
+  top: -7px;
+  transform: rotate(45deg);
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow .arrow__below {
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: white;
+  transform: rotate(-45deg);
+  right: -3px;
+  bottom: 12px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__arrow:hover {
+  width: 60%;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__text {
+  width: 100%;
+  position: absolute;
+  bottom: 90px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__text .block1__text--head {
+  text-transform: uppercase;
+  color: #57ffab;
+  font-family: "ubisoft-bold";
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__text .block1__text--sub {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-family: "CompactaBT";
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer--text {
+  color: white;
+  font-family: "ubisoft";
+  font-size: 0.75rem;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock .twoblock--brain {
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  font-size: 0.6875em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "ubisoft-bold";
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock .twoblock--like {
+  margin-left: 5px;
+  width: 50%;
+  height: 32px;
+  background-color: white;
+  color: #f11d68;
+  font-family: "ubisoft-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+.main__container .contentblock1 .contentblock1__inner .contentblock1__1 .contentblock1__1__inner .contentblock1__footer .footer__twoblock .twoblock--like .like--heart {
+  background-repeat: no-repeat;
+  background-image: url(https://static-wordpress.akamaized.net/stories.ubisoft.com/public/assets/resources/570601149.png?1.5.22);
+  width: 13px;
+  height: 13px;
+  background-position: -343.5px -251.75px;
+  background-size: 421px 350px;
+  display: block;
+  position: relative;
+  transform: translateX(2px);
+}
+@media only screen and (min-width: 1079px) {
+  .main__container .contentblock1__1 {
+    width: 50% !important;
+    height: 100%;
+  }
+  .main__container .contentblock1 {
+    width: 100%;
+    height: 50vw !important;
+  }
+  .main__container .contentblock1__text .block1__text--sub {
+    font-size: 3.25em !important;
+  }
+  .main__container .contentblock1__0 {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+  }
+  .main__container .contentblock1__0 .contentblock1__0__inner {
+    width: 100%;
+    height: 100%;
+    background-image: url("../Assets/image/main-menu-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .main__container .contentblock1__text .block1__text--sub {
+    font-size: 5.25em !important;
+  }
+  .main__container .contentblock1__text .footer--text {
+    font-size: 1.75rem !important;
+  }
+  .main__container .contentblock1__text .timeread__duration {
+    font-size: 4rem !important;
+  }
+  .main__container .contentblock1__text .contentblock1__text {
+    bottom: 150px !important;
+  }
+  .main__container .contentblock1__text .block1__text--head {
+    font-size: 1.875rem !important;
+  }
+  .main__container .contentblock1__text .timeread__unit {
+    font-size: 16px !important;
+    transform: rotate(90deg) translate(-33px, -5px) !important;
+  }
+}
+
+/*# sourceMappingURL=cover.css.map */
